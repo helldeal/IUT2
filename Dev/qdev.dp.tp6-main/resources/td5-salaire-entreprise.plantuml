@@ -1,0 +1,71 @@
+@startuml
+hide circle
+skinparam monochrome true
+skinparam classAttributeIconSize 0
+skinparam backgroundcolor white
+skinparam groupInheritance 4
+
+class Salariable <<interface>> {
+  salaire() : Double
+}
+
+Entite .up.|>Salariable : << realizes >>
+Entreprise .up.|> Salariable : << realizes >>
+
+class Ajoutable <<interface>> {
+    ajouter(entite : Entite)
+    supprimer(entite : Entite)  
+}
+
+
+class Entite <<abstract>> {
+  <<abstract>> salaire() : Double
+}
+
+    class Employe {
+    - nom : String 
+    - salaire : Double   
+    + salaire() : Double
+  }
+
+  class Departement {
+    + ajouter(entite : Entite)
+    + supprimer(entite : Entite)
+    + salaire() : Double
+  }
+
+Departement ..|> Ajoutable : << realizes >>
+
+class Entreprise {
+    + ajouter(entite : Entite)
+    + supprimer(entite : Entite)
+    + salaire() : Double
+}
+
+Entreprise ..|> Ajoutable : << realizes >>
+
+note right of Entreprise::ajouter
+principal.ajouter(entite)
+end note
+
+note right of Entreprise::supprimer
+principal.supprimer(entite)
+end note
+
+note right of Entreprise::salaire
+principal.salaire()
+end note
+
+
+Employe -up-|> Entite
+Departement -up-|> Entite
+Departement o--> "1..*\n -elements" Entite::salaire
+Entreprise *-down->"1 -principal" Departement::salaire
+
+class collections.MutableList<E> {
+}
+
+Departement .> collections.MutableList : << uses >>
+
+
+@enduml

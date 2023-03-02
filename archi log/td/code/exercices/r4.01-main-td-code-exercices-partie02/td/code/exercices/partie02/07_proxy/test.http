@@ -1,0 +1,8 @@
+### GET /parking
+http://localhost:3000/parking
+
+### GET /parking/distance/47.218371/-1.553621
+http://localhost:3000/parking/distance/47.218371/-1.553621
+
+### GET /parking/distance/47.218371/ab KO
+http://localhost:3000/parking/distance/47.218371/ab

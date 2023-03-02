@@ -1,0 +1,43 @@
+@startuml
+hide circle
+skinparam monochrome true
+skinparam classAttributeIconSize 0
+skinparam backgroundcolor white
+skinparam groupInheritance 4
+
+class PersonneA << abstract >> {
+   # nom : String
+   # <<create>> PersonneA(nom : String)
+    {static} donnePersonneSaisie(saisie : String) : PersonneA
+}
+
+class Personne {
+    - prenom : String   
+    - <<create>> Personne(nom : String, prenom : String)
+    + toString() : String
+  }
+
+class PersonneException {
+  
+} 
+
+class Entreprise {
+  - <<create>> Entreprise(nom : String, type : TypeEnt)
+  + toString() : String
+}
+
+enum CategorieEntreprise <<enumeration>> {
+  + {static} SA
+  + {static} EURL
+  + {static} SARL
+  + {static} SCP
+}
+
+
+PersonneA::donnePersonneSaisie .>  PersonneException : << uses >>
+Personne -up-|> PersonneA
+Entreprise -up-|> PersonneA
+
+Entreprise::afficher --> "1 -type" CategorieEntreprise
+
+@enduml

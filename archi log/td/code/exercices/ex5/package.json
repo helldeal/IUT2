@@ -1,0 +1,16 @@
+{
+  "name": "oui",
+  "version": "1.0.0",
+  "description": "oui",
+  "main": "index.mjs",
+  "scripts": {
+    "test": "echo \\\"Error: no test speciefied\\\" && exit 1 ",
+    "start": "node index.mjs"
+  },
+  "author": "Alex",
+  "license": "ISC",
+  "dependencies": {
+    "csv-parser": "^3.0.0",
+    "fs": "0.0.1-security"
+  }
+}

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="iut.but2.tp1.TestUsageFileArrayListVide" tests="6" skipped="0" failures="0" errors="0" timestamp="2022-10-20T07:38:42" hostname="U-INF-J-E113-04" time="0.01">
+  <properties/>
+  <testcase name="taille()" classname="iut.but2.tp1.TestUsageFileArrayListVide" time="0.0"/>
+  <testcase name="consult0()" classname="iut.but2.tp1.TestUsageFileArrayListVide" time="0.004"/>
+  <testcase name="consult10()" classname="iut.but2.tp1.TestUsageFileArrayListVide" time="0.001"/>
+  <testcase name="supp()" classname="iut.but2.tp1.TestUsageFileArrayListVide" time="0.001"/>
+  <testcase name="listefinvide()" classname="iut.but2.tp1.TestUsageFileArrayListVide" time="0.001"/>
+  <testcase name="listedebutvide()" classname="iut.but2.tp1.TestUsageFileArrayListVide" time="0.003"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

@@ -1,0 +1,77 @@
+[
+  {
+    "nom": "Kiwi",
+    "quantite": "10",
+    "prix": "4.5"
+  },
+  {
+    "nom": "Pomme",
+    "quantite": "20",
+    "prix": "6.4"
+  },
+  {
+    "nom": "Banane",
+    "quantite": "30",
+    "prix": "8.4"
+  },
+  {
+    "nom": "Poire",
+    "quantite": "30",
+    "prix": "10.4"
+  },
+  {
+    "nom": "Framboise",
+    "quantite": "50",
+    "prix": "12.4"
+  },
+  {
+    "nom": "Mûre",
+    "quantite": "60",
+    "prix": "14.4"
+  },
+  {
+    "nom": "Pêche",
+    "quantite": "70",
+    "prix": "16.4"
+  },
+  {
+    "nom": "Abricot",
+    "quantite": "80",
+    "prix": "18.4"
+  },
+  {
+    "nom": "Raisin",
+    "quantite": "90",
+    "prix": "20.4"
+  },
+  {
+    "nom": "Nectarine",
+    "quantite": "100",
+    "prix": "22.4"
+  },
+  {
+    "nom": "Goyave",
+    "quantite": "0",
+    "prix": "24.4"
+  },
+  {
+    "nom": "Orange",
+    "quantite": "120",
+    "prix": "26.4"
+  },
+  {
+    "nom": "Melon",
+    "quantite": "130",
+    "prix": "28.4"
+  },
+  {
+    "nom": "Ananas",
+    "quantite": "140",
+    "prix": "30.4"
+  },
+  {
+    "nom": "Fraise",
+    "quantite": "25",
+    "prix": "8.7"
+  }
+]

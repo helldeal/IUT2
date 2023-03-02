@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="iut.but2.r402.notation.ListeNotesTest" tests="4" skipped="0" failures="0" errors="0" timestamp="2023-02-10T11:01:10" hostname="U-INF-J-C001-17" time="0.023">
+  <properties/>
+  <testcase name="testNombreOccurrenceFail()" classname="iut.but2.r402.notation.ListeNotesTest" time="0.017"/>
+  <testcase name="testMoyenne00()" classname="iut.but2.r402.notation.ListeNotesTest" time="0.003"/>
+  <testcase name="testMoyenne11()" classname="iut.but2.r402.notation.ListeNotesTest" time="0.001"/>
+  <testcase name="testNombreOccurrence()" classname="iut.but2.r402.notation.ListeNotesTest" time="0.002"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

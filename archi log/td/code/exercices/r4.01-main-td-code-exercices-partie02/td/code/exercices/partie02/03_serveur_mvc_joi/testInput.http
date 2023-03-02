@@ -1,0 +1,30 @@
+### GET /user/{login} OK
+GET http://localhost:3000/user/anything
+
+### POST /user empty body
+POST http://localhost:3000/user
+
+### POST /user partial body
+POST http://localhost:3000/user
+Content-Type: application/json
+
+{
+  "login": "jo"
+}
+
+### POST /user other data-type
+POST http://localhost:3000/user
+Content-Type: application/x-www-form-urlencoded
+
+login=jo&password=pass
+
+### POST /user wrong data-type
+POST http://localhost:3000/user
+Content-Type: application/json
+
+login=jo&password=pass
+
+### wrong route
+GET  http://localhost:3000/bad
+
+

@@ -1,0 +1,3 @@
+RewriteEngine On
+
+FallbackResource /~jub/cc/sujet1/correction/part2/app/index.php

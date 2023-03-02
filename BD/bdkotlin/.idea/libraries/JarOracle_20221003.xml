@@ -1,0 +1,10 @@
+<component name="libraryTable">
+  <library name="JarOracle-20221003">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/../JarOracle-20221003/ojdbc8.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../JarOracle-20221003/orai18n.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

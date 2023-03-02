@@ -1,0 +1,52 @@
+@startuml
+hide circle
+'skinparam monochrome true
+skinparam classAttributeIconSize 0
+skinparam backgroundcolor white
+skinparam groupInheritance 4
+
+
+class Hashable <<interface>> {
+  hash() : Int
+}
+
+class IHashtable<E> <<interface>> {
+add(element: E): Boolean
+contains(element: E): Boolean
+remove(element: E): Boolean
+avoidedCollisions() : Int
+}
+
+IHashtable .right.> Hashable : << depends >>
+
+class HashtableA<E> {
+- size : Int
+<<create>> HashtableA(site : Int)
+# indice(element: E): Int
+}
+
+HashtableA .up.|> IHashtable : << realizes >>
+
+class  SimpleHashtable<E> {
+- table : Array<Any?>
+- get(index : Int) : E
++ add(element: E): Boolean
++ contains(element: E): Boolean
++ remove(element: E): Boolean
+}
+
+SimpleHashtable -up-|> HashtableA
+
+class  Hashtable<E> {
+- table : Array<MutableList<E>>
+- nbCollisions : Int = 0
++ add(element: E): Boolean
++ contains(element: E): Boolean
++ remove(element: E): Boolean
++ avoidedCollisions() : Int
++ {static} resize(hashtable : Hashtable<E>, newsize : Int) : IHashtable<E>
+}
+
+Hashtable -up-|> HashtableA
+
+@enduml

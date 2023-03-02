@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="fr"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>BasicAlarmClock.kt</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">butinfo2-qd3-td1-students-main</a> &gt; <a href="index.source.html" class="el_package">fr.nantes.univ.clock</a> &gt; <span class="el_source">BasicAlarmClock.kt</span></div><h1>BasicAlarmClock.kt</h1><pre class="source lang-java linenums">package fr.nantes.univ.clock
+
+/**
+ * Basic implementation of the [AlarmClock] interface.
+ *
+ * Initial code from Arnaud Lanoix and Jean-Marie Mottu
+ */
+<span class="fc" id="L8">class BasicAlarmClock(ring: Int, hour: Int, min: Int) : AlarmClock {</span>
+    /**
+     * {@inheritDoc}
+     */
+    /**
+     * An [int] value between 1 and 10 representing the ringtone.
+     */
+<span class="fc" id="L15">    override var ring = 0</span>
+        private set
+    /**
+     * {@inheritDoc}
+     */
+    /**
+     * An [int] value between 0 and 23 representing the alarm hour.
+     */
+<span class="fc" id="L23">    override var hour = 0</span>
+        private set
+    /**
+     * {@inheritDoc}
+     */
+    /**
+     * An [int] value between 0 and 59 representing the alarm minutes.
+     */
+<span class="fc" id="L31">    override var min = 0</span>
+        private set
+    /**
+     * {@inheritDoc}
+     */
+    /**
+     * A [boolean] value: true if the alarm is enabled, false otherwise.
+     */
+<span class="fc" id="L39">    override var isEnabled = false</span>
+        private set
+    /**
+     * {@inheritDoc}
+     */
+    /**
+     * A [boolean] value: true if the alarm is ringing, false otherwise.
+     */
+<span class="fc" id="L47">    override var isRinging = false</span>
+        private set
+
+    /**
+     * @see fr.nantes.alarm.AlarmClock
+     *
+     * @param ring [BasicAlarmClock.ring]
+     * @param hour [BasicAlarmClock.hour]
+     * @param min [BasicAlarmClock.min]
+     * @throws AlarmClockException if one parameter is out of bounds.
+     */
+<span class="fc" id="L58">    init {</span>
+<span class="fc bfc" id="L59" title="All 2 branches covered.">        if (hour &lt; 0) {</span>
+<span class="fc" id="L60">            throw AlarmClockException(&quot;bad hour: inf value&quot;)</span>
+<span class="fc bfc" id="L61" title="All 2 branches covered.">        } else if (hour &gt; 23) {</span>
+<span class="fc" id="L62">            throw AlarmClockException(&quot;bad hour: sup value&quot;)</span>
+<span class="fc bfc" id="L63" title="All 2 branches covered.">        } else if (min &lt; 0) {</span>
+<span class="fc" id="L64">            throw AlarmClockException(&quot;bad min: inf value&quot;)</span>
+<span class="fc bfc" id="L65" title="All 2 branches covered.">        } else if (min &gt; 59) {</span>
+<span class="fc" id="L66">            throw AlarmClockException(&quot;bad min: sup value&quot;)</span>
+<span class="fc bfc" id="L67" title="All 4 branches covered.">        } else if (ring &lt; 1 || ring &gt; 10) {</span>
+<span class="fc" id="L68">            throw AlarmClockException(&quot;bad ringtone: out of limits&quot;)</span>
+        } else {
+<span class="fc" id="L70">            this.ring = ring</span>
+<span class="fc" id="L71">            this.hour = hour</span>
+<span class="fc" id="L72">            this.min = min</span>
+        }
+<span class="fc" id="L74">    }</span>
+
+    /**
+     * {@inheritDoc}
+     */
+    @Throws(AlarmClockException::class)
+    override fun selectRing(ringtone: Int): Boolean {
+<span class="fc" id="L81">        var modified = false</span>
+<span class="fc bfc" id="L82" title="All 2 branches covered.">        if (!isRinging) {</span>
+<span class="pc bpc" id="L83" title="1 of 4 branches missed.">            if (ringtone &lt; 1 || ringtone &gt; 10) {</span>
+<span class="fc" id="L84">                throw AlarmClockException(&quot;bad ringtone: out of bounds&quot;)</span>
+            }
+<span class="fc bfc" id="L86" title="All 2 branches covered.">            modified = ring != ringtone</span>
+<span class="fc" id="L87">            ring = ringtone</span>
+        }
+<span class="fc" id="L89">        return modified</span>
+    }
+
+    /**
+     * {@inheritDoc}
+     */
+    @Throws(AlarmClockException::class)
+    override fun addMin(minutes: Int) {
+<span class="fc" id="L97">        var addedmin = minutes</span>
+<span class="fc" id="L98">        var addedhour = 0</span>
+<span class="fc" id="L99">        var newmin = 0</span>
+<span class="fc" id="L100">        var newhour = 0</span>
+
+<span class="fc bfc" id="L102" title="All 2 branches covered.">        if (addedmin &lt; 0) {</span>
+<span class="fc" id="L103">            throw AlarmClockException(&quot;bad min: inf value&quot;)</span>
+        }
+
+<span class="fc bfc" id="L106" title="All 2 branches covered.">        while (addedmin &gt; 59) {</span>
+<span class="fc" id="L107">            addedhour++</span>
+<span class="fc" id="L108">            addedmin = addedmin - 60</span>
+        }
+
+<span class="fc" id="L111">        newmin = min + addedmin</span>
+<span class="fc bfc" id="L112" title="All 2 branches covered.">        if (newmin &gt; 59) {</span>
+<span class="fc" id="L113">            addedhour++</span>
+<span class="fc" id="L114">            newmin = newmin - 60</span>
+        }
+<span class="fc" id="L116">        newhour = hour + addedhour</span>
+<span class="fc bfc" id="L117" title="All 2 branches covered.">        while (newhour &gt; 23) {</span>
+<span class="fc" id="L118">            newhour = newhour - 24</span>
+        }
+<span class="fc" id="L120">        hour = newhour</span>
+<span class="fc" id="L121">        min = newmin</span>
+<span class="fc" id="L122">    }</span>
+
+    /**
+     * {@inheritDoc}
+     */
+    @Throws(AlarmClockException::class)
+    override fun enable() {
+<span class="pc bpc" id="L129" title="1 of 2 branches missed.">        if (isRinging) {</span>
+<span class="nc" id="L130">            throw AlarmClockException(&quot;Cannot enable the alarm when it is ringing&quot;)</span>
+        }
+<span class="fc" id="L132">        isEnabled = true</span>
+<span class="fc" id="L133">    }</span>
+
+    /**
+     * {@inheritDoc}
+     */
+    override fun checkTimeAndRing(cal: Calendar) {
+<span class="fc bfc" id="L139" title="All 2 branches covered.">        if (isEnabled) {</span>
+<span class="pc bpc" id="L140" title="2 of 4 branches missed.">            if (hour == cal[Calendar.HOUR] &amp;&amp; min == cal[Calendar.MINUTE])</span>
+<span class="fc" id="L141">                isRinging = true</span>
+<span class="fc" id="L142">            isEnabled = false</span>
+        }
+<span class="fc" id="L144">    }</span>
+
+    /**
+     * {@inheritDoc}
+     */
+    @Throws(AlarmClockException::class)
+    override fun disable() {
+<span class="nc bnc" id="L151" title="All 2 branches missed.">        if (isRinging) {</span>
+<span class="nc" id="L152">            throw AlarmClockException(&quot;Cannot disable the alarm when it is ringing&quot;)</span>
+        }
+<span class="nc" id="L154">        isEnabled = false</span>
+<span class="nc" id="L155">    }</span>
+
+    /**
+     * {@inheritDoc}
+     */
+    @Throws(AlarmClockException::class)
+    override fun switchOff(snooze: Boolean) {
+<span class="nc" id="L162">        isRinging = false</span>
+<span class="nc bnc" id="L163" title="All 2 branches missed.">        if (snooze) {</span>
+<span class="nc" id="L164">            isEnabled = true</span>
+<span class="nc" id="L165">            addMin(5)</span>
+        }
+<span class="nc" id="L167">    }</span>
+
+    override fun hashCode(): Int {
+<span class="nc" id="L170">        return ring + hour + min + isEnabled.hashCode()+ isRinging.hashCode()</span>
+    }
+
+    override fun equals(o: Any?): Boolean {
+<span class="nc bnc" id="L174" title="All 2 branches missed.">        if (this === o) return true</span>
+<span class="nc bnc" id="L175" title="All 4 branches missed.">        if (o == null || javaClass != o.javaClass) return false</span>
+<span class="nc" id="L176">        val that = o as BasicAlarmClock</span>
+<span class="nc bnc" id="L177" title="All 10 branches missed.">        return ring == that.ring &amp;&amp; hour == that.hour &amp;&amp; min == that.min &amp;&amp; isEnabled == that.isEnabled &amp;&amp; isRinging == that.isRinging</span>
+    }
+
+    /**
+     * {@inheritDoc}
+     */
+    override fun setRingingOn() {
+<span class="nc" id="L184">        isRinging = true</span>
+<span class="nc" id="L185">        isEnabled = false</span>
+<span class="nc" id="L186">    }</span>
+
+    override fun toString(): String {
+<span class="nc" id="L189">        return &quot;BasicAlarmClock{&quot; +</span>
+<span class="nc" id="L190">                &quot;ring=&quot; + ring +</span>
+<span class="nc" id="L191">                &quot;, hour=&quot; + hour +</span>
+<span class="nc" id="L192">                &quot;, min=&quot; + min +</span>
+<span class="nc" id="L193">                &quot;, enabled=&quot; + isEnabled +</span>
+<span class="nc" id="L194">                &quot;, ringing=&quot; + isRinging +</span>
+                '}'
+    }
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.8.202204050719</span></div></body></html>

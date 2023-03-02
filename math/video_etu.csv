@@ -1,0 +1,891 @@
+AB_ID,AB_NOM,AB_PRENOM,AB_ADRESSE,AB_CP,AB_VILLE,AB_AGE,AB_GENRE
+ab_1,RAIMUS,B.,"28, rue de Savigny",91200,athis mons,74,F
+ab_2,MARTIN,P.,"162, rue de Vaugirard",75015,PARIS,46,M
+ab_3,BOEUF,D.,"43, rue des Bohutiers",75015,PARIS,18,F
+ab_4,DAHOMAIS,I.,"5, rue de Joinville",75015,PARIS,25,M
+ab_5,DANIELSSON,M.,"283, rue Lecourbe",92800,PUTEAUX,30,M
+ab_6,GARANGER,C.,"64, rue de Charonne",92800,PUTEAUX,79,F
+ab_7,DUMONET,F.,"24, allee de la Pierre Rouge",78000,versailles,31,F
+ab_8,FOELL,F.,"50, Hameau des Fontaines",75006,PARIS,25,M
+ab_9,GUIARD,C.,"66, rue Rabelais",93600,AULNAY SOUS BOIS,25,M
+ab_10,GAILIUS,N.,"3, rue du Puits",91360,epinay sur orge,20,M
+ab_11,HUGUET,C.,"9, rue de la Rangee",91390,MORSANG SUR ORGE,32,M
+ab_12,HUGUET,C.,"9, rue de la Rangee",91390,morsang sur orge,44,F
+ab_13,HOUEDE,C.,"20, allee Toison d'Or",75001,PARIS,63,F
+ab_14,HIRON,C.,"91, rue de Turenne",91100,SAINTRY SUR SEINE,48,M
+ab_15,HINFRAY,P.,"23, rue Paul Eluard",77210,AVON,31,M
+ab_16,HEUDE,M.,"16, rue G. Pages",75001,paris,23,M
+ab_17,HAMMAS,R.,"22, rue Tourlaque",92140,PARIS,18,M
+ab_18,HALIMI,D.,Charriere du Puits,75018,PARIS,28,M
+ab_19,HANSEN,A.,"13, rue des Freres Voisins",75007,PARIS,40,M
+ab_20,GUTIERREZ,L.,"20, rue du Rhin",77186,NOISIEL,68,F
+ab_21,HALIMI,D.,Charriere du Puits,75018,PARIS,19,M
+ab_22,GUERIN,D.,"20, rue Mercoeur",75018,PARIS,27,M
+ab_23,GUTIERREZ,L.,"20, rue du Rhin",77186,NOISIEL,24,M
+ab_24,GUILLOT,N.,"19, rue de l'Exposition",95580,andilly,54,F
+ab_25,GUICHAUX,B.,"27 bis, rue de la Jonquiere",75001,paris,32,M
+ab_26,GRUMBERG,R.,"18, rue Ernest Renan",75008,paris,51,F
+ab_27,GREMONT,A.,"24, bd de la Liberation",92800,PUTEAUX,46,F
+ab_28,GRABOWSKI,J.,"6, allee Henri Mondor",78500,sartrouville,33,M
+ab_29,GOYET,A.,"13, rue Poliveau",91000,EVRY,34,M
+ab_30,GOURBIN,J.,"3, rue Ernest Renan",75016,PARIS,45,F
+ab_31,GOSSELIN,A.,"10, rue Henri Duchene",78500,SARTROUVILLE,33,M
+ab_32,GOMBART,C.,"3, Res. du Bois du Roi",92600,ASNIERES,71,F
+ab_33,GODEFROY,C.,"169, bd Lefbvre",78430,LOUVECIENNES,21,F
+ab_34,GOB,A.,"11, rue Cloche Perce",92380,GARCHES,27,M
+ab_35,GIUST,M.,"131, rue des Pyrennees",75013,PARIS,38,F
+ab_36,GIRAUX,A.,"4, rue du Pont de Latts",75019,PARIS,55,F
+ab_37,GIRARD,D.,"6, allee Nexton",77500,CHELLES,70,F
+ab_38,GIMENEZ,M.,"3, rue de la Republique",75020,PARIS,24,M
+ab_39,GHESQUIERE,C.,"58, square des Pervenches",77590,BOIS LE ROI,19,M
+ab_40,GEORGE,A.,"116, bd Voltaire",92300,LEVALLOIS PERRET,48,M
+ab_41,GAULTIER,I.,"116, boulevard Raspail",91390,morsang sur orge,24,M
+ab_42,GAUDIN,G.,"2 bis, av. de Segur",94100,SAINT MAUR,68,F
+ab_43,GARSON,M.,Res. les Buissons,77670,SAINT MAMMES,70,F
+ab_44,GARON,J.,259 rue Saint Denis,92000,NANTERRE VILLE,48,M
+ab_45,GARCIA,P.,6 rue de Reims,94200,IVRY SUR SEINE,31,M
+ab_46,GANDY,P.,4/6 rue de la Plaine,94000,CRETEIL,43,M
+ab_47,GALODE,F.,rue de la Mairie,95880,ENGHIEN LES BAINS,48,F
+ab_48,GALERNE,S.,"59, rue Saint Dominique",75005,PARIS,50,F
+ab_49,GACHET,J.,"23, rue de Berne",75014,PARIS,20,M
+ab_50,FEVRIER,N.,"3, rue Pasteur",94500,CHAMPIGNY SUR MARNE,77,F
+ab_51,FUMANERI,R.,"13, rue de la Sante",75012,PARIS,47,M
+ab_52,FRESCAL,T.,"330, rue de la Maladiere",75011,PARIS,36,F
+ab_53,FREROT,D.,"8, rue des Tisserands",75007,PARIS,37,F
+ab_54,FRANCIS,M.,"16, rue de Saussure",92100,BOULOGNE,80,F
+ab_55,FOURNIER,B.,"39, rue Johnstone Reckitt",92140,CLAMART,20,M
+ab_56,FOULOGNE,S.,"17, rue d'Alesia",92400,BOULOGNE,31,F
+ab_57,FOREST,P.,"11, rue Guingamp",75006,PARIS,32,F
+ab_58,FINDLING,E.,C/ M. Beugniet,94230,CACHAN,42,F
+ab_59,FERRAND,D.,"309, rue Pasteur",75017,PARIS,22,M
+ab_60,FAVIER,M.,"50, rue Botzaris",75009,PARIS,27,M
+ab_61,FARNOUX,J.,"31 bis, rue de la Prairie",94000,VINCENNES,68,M
+ab_62,FABREGUETTE,F.,Pavillon de Mottechaix,92200,NEUILLY,26,M
+ab_63,ESTHER,M.,F 32 la Croix Saint Sylvere,75006,PARIS,59,F
+ab_64,ESPOUY,L.,"101, rue Saint Dominique",94000,CRETEIL,21,F
+ab_65,ENICOLO,D.,"4, rue Thureau Dangin",75011,PARIS,30,M
+ab_66,ELFASSI,J.,"3, impasse Veuve Mercier",91160,BALIZY,18,M
+ab_67,EDERA,A.,"13, rue Parrot",75013,PARIS,50,F
+ab_68,DUVERNAY,F.,"20, rue du Tesrage",94500,CHAMPIGNY SUR MARNE,22,F
+ab_69,DURAND,M.,"90, rue Edouard Branly",95000,CERGY PONTOISE,70,F
+ab_70,DUPUY,S.,"22, rue Louis Pasteur",95150,TAVERNY,29,M
+ab_71,DUPONT,D.,"47, bd du General Leclerc",92190,MEUDON,53,F
+ab_72,DUPONT,J.,"77, la Morandiere",92100,BOULOGNE,44,F
+ab_73,DUPIRE,C.,"7, rue Kleber",94240,L'HAY LES ROSES,32,M
+ab_74,DUBOIS,A.,"84 bis, rue du Pont de Creteil",75017,PARIS,46,F
+ab_75,DUBART GODEST,M.,"38, av. Henri Barbusse",75006,PARIS,53,F
+ab_76,DU FAY DE CHOISINET,V.,"9, Villa d'Este",92100,BOULOGNE,50,F
+ab_77,DU BOISBERRANGER BRAIN,C.,"5, Allee Mansard",78170,LA CELLE SAINT CLOUD,19,M
+ab_78,FAMERY,H.,"24, Cite des Fleurs",94100,SAINT MAUR,23,M
+ab_79,DORE,F.,"14, bd H. Pinaud",93390,CLICHY SOUS BOIS,62,F
+ab_80,DJELILI,L.,"7, rue Saint Rames",75017,PARIS,31,F
+ab_81,DJAKOV,F.,avenue Saint Hubert,75019,PARIS,32,F
+ab_82,GIRAUD,M.,"94, av. Philippe Auguste",75005,PARIS,22,M
+ab_83,DEVILLERS,V.,"55, rue Chauveau",75013,PARIS,22,M
+ab_84,DESPLANCHES,S.,"67, rue de Paris",92100,BOULOGNE,29,M
+ab_85,DESMOUTIER,N.,"175, quai de Valmy",75008,PARIS,29,F
+ab_86,DESHAIRES,M.,"15, rue des Feuillantines",91310,LIMAS,28,M
+ab_87,DESCAMPS,M.,"16, bd de l'Europe",75015,PARIS,30,M
+ab_88,DERENNES,M.,"2, rue F. Garnier",78660,ABLIS,40,F
+ab_89,DEODAT,J.,"10, rue de la Motte",77420,CHAMPS SUR MARNE,19,M
+ab_90,DENIS,M.,"11, quai Aulagnier",92210,SAINT_CLOUD,39,F
+ab_91,DELANOE,J.,"39, av. des Sapins",75011,PARIS,35,F
+ab_92,DELTOR,V.,"342, rue St Jacques",94700,MAISONS ALFORT,35,F
+ab_93,DELPEUT,A.,"77, rue Notre Dame des Champs",77410,CLAYE SOUILLY,25,M
+ab_94,DELION,P.,"4-6, rue de la Plaine",94700,MAISONS_ALFORT,37,M
+ab_95,DELANOE,J.,"39, av. des Sapins",75011,PARIS,68,M
+ab_96,DEGORRE,C.,"209, rue St Leonard",93340,LE RAINCY,49,F
+ab_97,DEDERICHS,E.,"3, parc de la Chenaie",75006,PARIS,47,F
+ab_98,DECLERCK,S.,"12, rue des Volubilis",75020,PARIS,26,F
+ab_99,DECERISY,E.,"122, av. Simon Bolivar",75015,PARIS,38,F
+ab_100,DEBARD,F.,"3, rue Michelet",94370,SUCY EN BRIE,48,M
+ab_101,DE VILLAINES,C.,"32, rue Albert 1er",75006,PARIS,38,F
+ab_102,DE TROYA,L.,"17, rue Charles Lefevre",92000,PUTEAUX,28,M
+ab_103,DE ROO,J.,"2, rue Leo Lagrange",75003,PARIS,25,M
+ab_104,DE LEU,R.,"16, rue de la Convention",95160,MONTMORENCY,37,F
+ab_105,DE LA VALLEE DE PIMODAN,P.,"50, av. du Roule",75010,PARIS,21,M
+ab_106,DE GIRONDON,R.,"90, av. Pablo Picasso",92130,ISSY LES MOULINEAUX,38,M
+ab_107,DE FROISSARD,B.,"72, av. Henri Barbusse",94120,FONTENAY SOUS BOIS,45,M
+ab_108,DE BODINAT,A.,"13, quai de la Canardiere",92410,VILLE D'AVRAY,26,M
+ab_109,DAVID,B.,"8, rue Jean Jaures",75018,PARIS,30,M
+ab_110,DANEL,L.,"1, rue du Gros Caillou",75016,PARIS,37,M
+ab_111,GALLI,H.,"1, av. de la Republique",94340,JOINVILLE LE PONT,26,M
+ab_112,DINTINO,G.,"2, rue des Favorites",75017,PARIS,21,M
+ab_113,D ARVILLE,V.,"52, rue d'Avron",75015,PARIS,22,M
+ab_114,D ALLENS,C.,"10, allee Rouaillier",75017,PARIS,24,M
+ab_115,HALGAND,T.,"2, square Rosny Aine",92270,BOIS COLOMBES,61,F
+ab_116,GEORGEON,O.,"7, rue Chevert",75010,PARIS,31,F
+ab_117,DEFER,H.,"81, av. de la Bourdonnais",92170,VANVES,24,F
+ab_118,GONNIN,S.,"243, Grande rue",75017,PARIS,24,M
+ab_119,DANTO,C.,"4, av. Doret",91400,ORSAY,22,M
+ab_120,DAVID BOYET,P.,"13, rue des Ursins",93340,LE RAINCY,38,F
+ab_121,DAVID,E.,"5, rue Henri Stendhal",75015,PARIS,23,M
+ab_122,DE BARDY,O.,"82, rue Aristide Briand",75005,PARIS,27,M
+ab_123,DE BEAUMONT,P.,"27, rue Floralia",75014,PARIS,23,M
+ab_124,DIAS,M.,"20, rue Gabriel Goudy",75020,PARIS,29,M
+ab_125,DANA,A.,"17, rue du Gros Chene",75003,PARIS,21,M
+ab_126,HOVINE,T.,"12, av. Jean Bouin",93290,TREMBLAY LES GONESSE,26,M
+ab_127,DENIS,E.,Residence Saint Clement,92000,NANTERRE,24,M
+ab_128,GUILLAUMET,P.,"24, rue des Carmes",75014,PARIS,63,F
+ab_129,DELORME,P.,"8, rue Charles Pranard",93000,BOBIGNY,32,M
+ab_130,GOUVARD,I.,"22, rue Vic d'Azir",92160,ANTONY,30,M
+ab_131,DUCOIN,C.,"6, rue Henri Dunant",75017,PARIS,21,F
+ab_132,GARNIER,I.,"19, allee des Andresis",75019,PARIS,23,M
+ab_133,DEDRICH,J.,"110, rue Didot",75015,PARIS,30,M
+ab_134,GADESAUDE,F.,"48, rue Michael Ange",75016,PARIS,60,F
+ab_135,GASTINEAU,H.,"35, bd Pasteur",78330,FONTENAY LE FLEURY,23,M
+ab_136,DELAUNAY,L.,"22, rue Jules Valles",75116,PARIS,41,F
+ab_137,DELHIEF,F.,"16, place des Etats Unis",75008,PARIS,33,F
+ab_138,DEMARIA,J.,"4, place Delondres",75003,PARIS,41,M
+ab_139,CABIN SAINT MARCEL,A.,"15, rue F. Buisson",78500,SARTROUVILLE,20,M
+ab_140,DUFRESNE,J.,"34, rue du Dr Blanche",92250,GARENNE COLOMBES,23,M
+ab_141,DUPUICH,Y.,"17, rue du Renard",75015,PARIS,30,F
+ab_142,DUCOURNEAU,F.,"27, rue Raymond Cornil",92290,CHATENAY MALABRY,47,F
+ab_143,FLEURETTE,M.,"4, rue de Grenelle",75018,PARIS,18,M
+ab_144,DJIAN,C.,"5, parc de la Saane",92190,MEUDON,24,M
+ab_145,DROZ,S.,"19, rue des Elus",92320,CHATILLON/ BAGNEUX,73,F
+ab_146,DUBOIS,M.,"9, rue de la Petite Pierre",75016,PARIS,74,F
+ab_147,FAUQUET LEMAITRE,A.,"10, rue des Prouvaires",75018,PARIS,73,F
+ab_148,FERRAND,D.,"147, rue Armand Sylvestre",75015,PARIS,34,F
+ab_149,FERRICELLI,M.,"7, rue Louis Braille",75014,PARIS,36,M
+ab_150,FITAMANT,C.,"16, av. du Puy de Gravenoire",75017,PARIS,27,M
+ab_151,FORESTIER,B.,"21, av. Albert Thomas",92130,ISSY LES MOULINEAUX,20,M
+ab_152,FOUQUEAU NISHIMURA,R.,"25, rue Blatin",75017,PARIS,30,M
+ab_153,GABRIEL,P.,"16, rue Auguste Lancon",75014,PARIS,21,M
+ab_154,GALLARDO,J.,"40, rue du Haut Carre",75014,PARIS,35,F
+ab_155,GERTOU,S.,"8 ter, rue Traversiere",75020,PARIS,50,F
+ab_156,GIRARD BOSC,D.,"7, rue Balzac",75015,PARIS,36,F
+ab_157,GRANDEL,C.,"11 bis, rue Th. de Banville",75010,PARIS,50,F
+ab_158,GUILLARD,M.,"9, rue d'Artois",75015,PARIS,32,M
+ab_159,HERBRETEAU,M.,"16, passage Charles Albert",92350,PLESSIS ROBINSON,48,M
+ab_160,HERRY,A.,"8, rue Eluard",91740,PUSSAY,20,M
+ab_161,HEBRARD,P.,"11, av. Marinville",75012,PARIS,26,M
+ab_162,HURTAUD,L.,"7, rue Lyautey",75015,PARIS,25,M
+ab_163,HIDOUX,S.,"71-73, av. des Ternes",93110,ROSNY SOUS BOIS,39,F
+ab_164,DANNEAU,M.,"14, rue Domion",91360,EPINAY SUR ORGE,39,F
+ab_165,DE RANCOURT,L.,route d'Entraigues,93110,ROSNY SOUS BOIS,80,F
+ab_166,DAMAREY,S.,"9, rue Didot",92170,VANVES,20,M
+ab_167,FISCHBACH,D.,"117, Cours Lafayette",92400,COURBEVOIE,71,F
+ab_168,FORT,A.,"8, av. Anatole France",75018,PARIS,23,M
+ab_169,GASPARD,C.,route de Grainville,77000,MELUN,30,M
+ab_170,GIRAUD,S.,"28, rue Vauthier",92220,BAGNEUX,50,M
+ab_171,DUTOT,O.,"147, rue de Malpalu",75017,PARIS,48,M
+ab_172,FADE,C.,"1, rue Richepin",75001,PARIS,43,F
+ab_173,FIGARO,C.,"4, passage de la Ville En Briques",75013,PARIS,26,M
+ab_174,DUPUY,C.,"18, av. P. Magne",92110,CLICHY,46,F
+ab_175,HOUDOUIN,L.,"52, av. Gravereaux",95000,CERGY ST CHRISTOPHE,47,F
+ab_176,DE MORATTI,P.,"23, rue Victor Hugo",93340,LE RAINCY,23,M
+ab_177,FEBLES SANTANA,E.,"3, rue Marcel Miquel",95500,GONESSE,47,F
+ab_178,DOS SANTOS,A.,"227, rue du Renard",92200,NEUILLY,28,M
+ab_179,GRUNLER,P.,"79, rue du 1er Mars",75004,PARIS,48,M
+ab_180,FERTON,M.,"7, rue Louis Braille",91300,MASSY,43,M
+ab_181,GUION,C.,"20, rue des Dahlias",75008,PARIS,28,M
+ab_182,DANOUA,N.,"20, rue Witkowski",94380,BONNEUIL SUR MARNE,75,F
+ab_183,DOS SANTOS,A.,"227, rue du Renard",92200,NEUILLY,37,F
+ab_184,DUFFET,M.,"123, av. de la Republique",75007,PARIS,75,F
+ab_185,FERTON,M.,"7, rue Louis Braille",91300,MASSY,18,M
+ab_186,HUBERT,J.,"6, Suare du Graisivaudan",75009,PARIS,38,F
+ab_187,DE SUAREZ D AULAN,C.,"18, rue Veuve Malhere",94440,SANTENY,67,F
+ab_188,FRELIER,N.,"14, Chemin des Montquartiers",93100,MONTREUIL,31,M
+ab_189,DUMAZEDIER,C.,"14, rue du Chemin Vert",75008,PARIS,19,F
+ab_190,DADON PATY,F.,"22, av. des Herons",75012,PARIS,35,F
+ab_191,GODON,I.,"22 bis, Grande rue",94700,MAISONS ALFORT,19,M
+ab_192,DUVILLIER,B.,"la Bellangerie, Fontaine",92170,VANVES,31,F
+ab_193,FESTAL,C.,"8, rue de Chatillon",77400,LAGNY-SUR-MARNE,30,F
+ab_194,DEMONTEIX FAGEDET,N.,"25, bd de la Mediterranee, Bat C",92210,SAINT-CLOUD,28,M
+ab_195,HAUSHALTER,P.,"14, rue Beranger",93250,VILLEMONBLE,30,M
+ab_196,GIRET,N.,"2 bis, rue d'Andilly",75013,PARIS,24,M
+ab_197,DIARRA,S.,"79, rue de la Verrerie",94000,CRETEIL,54,F
+ab_198,DELORME,D.,"3, rue Basse des Ramparts",75006,PARIS,23,F
+ab_199,FESTAL,C.,"8, rue de Chatillon",77400,LAGNY-SUR-MARNE,61,F
+ab_200,GRANET,A.,"142, rue Saint Maur",75016,PARIS,21,M
+ab_201,GARCIN MARCON,V.,"16, av. Leon Blum",75013,PARIS,43,F
+ab_202,ERB,V.,"4, rue Paul Dupuy",77520,MONTIGNY LENCOU,19,M
+ab_203,DELAUBIER,A.,"19, rue du Cherche Midi",91300,MASSY,18,M
+ab_204,DE COUET DE LORRY,J.,"12, rue Robert Planquette",77410,ANNET,41,M
+ab_205,GOULLET DE RUGY,E.,"139, av. du General de Gaulle",75015,PARIS,24,M
+ab_206,FAVARD,N.,"99, rue Francois Hanriot",75016,PARIS,29,M
+ab_207,DESCHAMPS,O.,"11, av. de la Faisanderie",91400,TOULOUSE,22,M
+ab_208,GALLO,F.,"3, rue des petits ponts",94100,SAINT MAUR,48,F
+ab_209,FREYSSINIER,F.,"14, rue Jules Michelet",94000,CRETEIL,22,M
+ab_210,HENNEAU,B.,"20, av Charles de Gaulle",75010,PARIS,48,F
+ab_211,FONTAINE,J.,"131, rue du Faubourg Saint Antoine",94410,SAINT MAURICE,29,M
+ab_212,ESSER,E.,"50, rue de la Croix Nivert",75001,PARIS,45,M
+ab_213,FAVAT,E.,"74, rue de Sevres",94600,NOISY LE ROI,57,F
+ab_214,DIVARE,V.,"12, rue de l'Exposition",92600,ASNIERES,29,M
+ab_215,DROUET,J.,"5, rue Dupuis",78120,RAMBOUILLET,26,M
+ab_216,SILVA,V.,"8, rue de Verdun",75015,PARIS,34,F
+ab_217,RIGAUD,D.,"18-20, rue Perrus",75116,PARIS,18,M
+ab_218,WESSER,M.,"47, av. de la Division Leclerc",75015,PARIS,43,F
+ab_219,SEDLAK,J.,"213, rue Estienne d'Orves",91210,DRAVEIL,26,M
+ab_220,VORNIQUE,Y.,"10 bis, rue de la Gaiete",75005,PARIS,71,F
+ab_221,ZITOUNI BELBOUAB,R.,"8, av. des Martins Pecheurs",94100,ST MAUR,42,M
+ab_222,SCHILLER,A.,"14, rue Baudrairie",94100,ST MAUR DES FO,24,M
+ab_223,SCHMITT,D.,"21, bd Saint Germain",95210,SAINT GRATIEN,43,M
+ab_224,SOYEZ,C.,"33, rue Cartault",75015,PARIS,28,M
+ab_225,RAVIZZA,D.,"15, av. Casanova",75017,PARIS,24,M
+ab_226,TOURE,S.,"10, rue Madeleine Michelis",75013,PARIS,29,M
+ab_227,RODRIGUES,I.,"2, rue des Epinettes",93100,MONTREUIL,19,M
+ab_228,WAHL,S.,"29, rue des Graviers",91630,MAYOLLES EN HUREPOIX,21,M
+ab_229,SMITH,C.,"10, rue Edouard Manet",92290,CHATENAY MALABRY,26,M
+ab_230,VINCKEL,J.,"42, rue Poussin",93170,BAGNOLET,58,F
+ab_231,TREMBLAY,L.,"16 bis, rue Paul Bert Res. le Panorama",95100,ARGENTEUIL,48,F
+ab_232,TOULZA,C.,"18, quai du Louvre",75015,PARIS,19,F
+ab_233,THAMMAVONGSA,I.,"5, Villa des Tilleuls",93430,CHENNEVIERS,79,F
+ab_234,RIBEROLLES,N.,"116, rue P. Valdo",75007,PARIS,44,F
+ab_235,THEBAULT,O.,"7, rue Madeleine Pingot",92300,LEVALLOIS PERRET,32,M
+ab_236,RIVAILLIER,M.,"53, rue Tete d'Or",75019,PARIS,50,F
+ab_237,ROUMAGNAC,A.,"25, rue de Chazelles",75006,PARIS,53,F
+ab_238,REVOL,L.,"23, rue Gauthey",75011,PARIS,72,F
+ab_239,SOULIER,B.,rue Lafayette,92200,NEUILLY,30,F
+ab_240,THAMMAVONGSA,I.,"5, Villa des Tilleuls",93430,CHENNEVIERS,42,F
+ab_241,VERONE,G.,Res. la Pommeraie,94210,LA VARENNE SAINT HIL,24,M
+ab_242,HATTEZ,A.,le Peireguier du Jas,92000,nanterre,28,M
+ab_243,WALLUT,J.,"58, rue Louise Michel",93310,PRE SAINT GERVAIS,28,M
+ab_244,SEMPOL,G.,"6, av. de Lanessan",75003,PARIS,26,M
+ab_245,SALIBA,E.,route Fouillouse,94700,MAISONS ALFORT,64,F
+ab_246,WADOUX,P.,"2, rue l'Orphelinat",75016,PARIS,24,M
+ab_247,VETIER,P.,la Sauvagere,77135,PONTCARRE,22,M
+ab_248,WAGNER,B.,"6, rue Gaspard Andre",75017,PARIS,20,M
+ab_249,VALERY,M.,"8, square du Tir",94100,SAINT MAUR DES FOSSE,46,F
+ab_250,RETO,A.,"89, Chemin J. Roubin",75019,PARIS,37,M
+ab_251,VESCHI,L.,"86, rue des Bas Rogers",92210,SAINT CLOUD,18,M
+ab_252,SEMPOL,G.,"6, av. de Lanessan",75003,PARIS,30,F
+ab_253,TONG,I.,"6, rue Amelot",94500,CHAMPIGNY SUR MARNE,30,F
+ab_254,URY,F.,"83, rue Blomet",75011,PARIS,20,M
+ab_255,RUGRAFF,C.,"8, rue des Mimosas",75017,PARIS,29,M
+ab_256,QUEYROUX,A.,"20, rue Vernier",75015,PARIS,48,F
+ab_257,TOUNY,C.,"4, rue Friant",95500,GONESSE,46,F
+ab_258,RICHER,B.,"28, rue de la Republique",78170,LA CELLE SAINT CLOUD,42,F
+ab_259,SPICHT,P.,"74, av. Marx Darmoy",75016,PARIS,50,F
+ab_260,GIROUD,C.,"10, allee P. de Rozier",93410,VAUJOURS,51,F
+ab_261,VONGXAY,S.,"29, Clos des Perroquets",75004,PARIS,21,M
+ab_262,ROUBIEU,J.,"50, av. de Villeneuve l'Etang",92190,MEUDON,29,M
+ab_263,RANZONI,C.,"4, route de la Queue En Brie",94100,SAINT MAUR,21,M
+ab_264,VON TROTHA,I.,"5, rue Augereau",75007,PARIS,26,M
+ab_265,THOMAS,N.,"159, bd du Mondetour",75015,PARIS,21,M
+ab_266,TRINQUET,A.,"122, av. Daumesnil",95130,LE PLESSIS BOUCHARD,49,F
+ab_267,TEDDE,M.,"2, Allee de la Boissiere",78460,CHEVREUSE,20,M
+ab_268,RENAUD,J.,"2, rue des Primeveres",94100,SAINT MANDE DES FOSS,30,M
+ab_269,GRANT,C.,"41, route de Rouen",94400,VITRY SUR SEINE,24,M
+ab_270,QUER,N.,"33, rue Cartault",93160,NOISY LE GRAND,37,F
+ab_271,SARRAZIN,P.,"16, rue Gagnee",93700,DRANCY,48,M
+ab_272,RANZONI,C.,"4, route de la Queue En Brie",94100,SAINT MAUR,30,M
+ab_273,RAPENNE,P.,"7, rue Hoppolyte Maindron",92200,NEUILLY,21,M
+ab_274,RASSAT,J.,"71, rue J.b. Clement",75016,PARIS,26,M
+ab_275,RATZ,R.,"71, rue de la Fraternite",77400,GOUVERNES,26,M
+ab_276,RIVALLAIN,E.,"4 bis, rue Violet",91160,LONGJUMEAU,22,F
+ab_277,REGNAULT,J.,"13, rue de la Motte Picquet",75013,PARIS,19,M
+ab_278,RENAUD,J.,"2, rue des Primeveres",94100,SAINT MANDE DES FOSS,50,F
+ab_279,ROCH,J.,"59, rue de Paris",93160,NOISY LE GRAND,30,M
+ab_280,RENOUARD DE BUSSIERE,A.,"16, Cours Vitton",94240,L'HAY LES ROSES,21,M
+ab_281,REVILLON,C.,"10, allee Carl",93190,LIVRY GARGAN,30,M
+ab_282,RIBERPREY,L.,"10, rue Chopin",75007,PARIS,36,M
+ab_283,RIBOUX,M.,"4, rue du Petit Rocher",91210,DRAVEIL,22,M
+ab_284,RIGALDO,C.,"30, Oree du Bois",94360,VINCENNES,45,F
+ab_285,RIGAULT,C.,la Soliviere / Bueil En Touraine,94240,L'HAY LES ROSES,27,F
+ab_286,RION,P.,"17, Clos Courtin",75009,PARIS,37,F
+ab_287,RIVALLAIN,E.,"4 bis, rue Violet",91160,LONGJUMEAU,47,M
+ab_288,ROBERT,G.,"7, rue C. Corot",91940,LES ULIS,40,F
+ab_289,ROBIN,P.,"6, rue des Perchamps",75004,PARIS,30,M
+ab_290,ROCH,J.,"59, rue de Paris",93160,NOISY LE GRAND,18,M
+ab_291,ROTH LE GENTIL,O.,"33, av. Reille",75116,PARIS,48,M
+ab_292,ROURE,G.,Fontcrepon,78170,LA CELLE ST CLOUD,50,M
+ab_293,ROUX,B.,"4, rue Jacob",94170,LE PERREUX,37,M
+ab_294,SCHWEBEL,F.,"55, rue Rabelais",92000,NANTERRE,27,M
+ab_295,RUEDA,A.,"20, rue de Choiseul",75001,PARIS,30,F
+ab_296,SAIKI,A.,"11, allee de Normandie",77680,ROISSY EN BRIE,28,M
+ab_297,SAINT PAUL,S.,"37, rue des Archives",92100,BOULOGNE,76,F
+ab_298,SAINZ RUIZ,S.,"3, rue Mercoeur",92380,GARCHES,58,F
+ab_299,SANCHEZ,M.,"108, rue Grande",92220,BAGNEUX,38,F
+ab_300,SARLIN,C.,"3, Quare de Tanouarn",75011,PARIS,74,F
+ab_301,SAUZAY,A.,"73, rue Hebert",91390,MORSANG SUR ORGE,47,M
+ab_302,SCHER,S.,"72, avenue du General Leclerc",93100,MONTREIL,21,M
+ab_303,SCHNEIDER,M.,"85, av. des Ternes",75006,PARIS,27,M
+ab_304,SCHRYVE,C.,"16, rue Ginette Neveu",75004,PARIS,25,M
+ab_305,SCHWARTZ,G.,"47, av. Louise",93260,LES LILAS,19,M
+ab_306,SCHWEBEL,F.,"55, rue Rabelais",92000,NANTERRE,20,M
+ab_307,SELTZ,V.,"53, bd du General Leclerc",92000,NANTERRE,46,F
+ab_308,SEROT,J.,5 rue de Maupassant,94000,CRETEIL,42,F
+ab_309,SIGOT,J.,"96, rue G. Peri",75020,PARIS,29,M
+ab_310,VOLOCH,G.,"4, rue Paul Lecomte",93390,CLICHY SOUS BOIS,26,M
+ab_311,SOUQ,P.,"10 bis, allee de Turenne",92130,ISSY LES MOULINEAUX,31,F
+ab_312,STEEG,E.,"63, rue Labrouste",75007,PARIS,35,M
+ab_313,STOFFEL,C.,En Beaufer,93200,SAINT DENIS,32,M
+ab_314,SUBIT,J.,"14, rue Victor Hugo",92800,PUTEAUX,74,F
+ab_315,SZUPERSKI,W.,"43, bd des Neiges",92200,NEUILLY,24,M
+ab_316,TABBECH,S.,"34/36, rue du General Leclerc",75015,PARIS,23,M
+ab_317,TASSIN,M.,"36, rue de Mesly",75006,PARIS,23,M
+ab_318,TAZIT,N.,"9, rue Fourcroy",92130,ISSY LES MOULINEAUX,28,M
+ab_319,TELLA,A.,"3, av. Lesage",75014,PARIS,29,M
+ab_320,THIERRY,R.,"13, av. de la Fontaine Rene",75012,PARIS,31,F
+ab_321,THOMAS,L.,"19, rue des Cinq Diamants",75015,PARIS,28,M
+ab_322,THOMASSET,H.,"12, rue des Renaudes",75017,PARIS,37,F
+ab_323,THUEUX,F.,"195, rue Emile Combes",75014,PARIS,33,F
+ab_324,TISSERANT,C.,"25, rue Jules Ferry",91220,PLESSIS PATE,45,F
+ab_325,TITONE,M.,"38, rue des Cordelieres",75011,PARIS,60,F
+ab_326,TOLU,S.,"9, bd Lenine",75017,PARIS,23,M
+ab_327,TORCHARD,N.,"20, rue de Paradis",75015,PARIS,39,F
+ab_328,TOURMEN,A.,"34, av. du General de Gaulle",75017,PARIS,32,F
+ab_329,TOUZET,L.,"47, rue Petite Voie de Noise",95400,ARNOUVILLE GONESSE,30,F
+ab_330,TROUBLE,B.,"12, rue des Gobelins",75012,PARIS,74,F
+ab_331,TURBOT,G.,"9, av. Ile de France",78370,PLAISIR,21,M
+ab_332,VALEYRE,Y.,"26, rue du General Leclerc",92420,VAUCRESSON,24,F
+ab_333,VAUQUELIN,C.,10è bd Magenta,75014,PARIS,36,M
+ab_334,VEDIE,N.,"178, bd Berthier",75011,PARIS,24,M
+ab_335,VELLAY,M.,"5, rue Racine",92700,COLOMBES,19,M
+ab_336,VERMEERSCH,M.,"6, Residence du Clos d'Orleans",93700,DRANCY,27,M
+ab_337,VIDAL,Y.,"13, rue Louise Michel",92600,ASNIERES,26,M
+ab_338,VILLAIN,S.,"12, rue Robert Planquette",75017,PARIS,27,M
+ab_339,VILMINOT BLUM,G.,"2, rue Marie Sorin Defresne",75016,PARIS,18,M
+ab_340,VUILLEREZ,A.,"1, rue Jacques Louis Bernier",75011,PARIS,30,M
+ab_341,WANTE,C.,"32, rue Rouget de l'Isle",91100,CORBEIL,48,M
+ab_342,WERTHEIMER,G.,"19, rue des Haies",92130,ISSY LES MOULINEAUX,39,M
+ab_343,SPICA,J.,"16, Res. Boieldieu",94500,CHAMPIGNY,22,M
+ab_344,ZIMMERMANN,B.,"44, boulevard Pereire",91136,RIS ORANGIS,44,M
+ab_345,RUE,P.,"27, Sentier du parc",93160,NOISY LE GRAND,21,M
+ab_346,RATZIMBAZAFY,V.,"140,rue Allende",75016,PARIS,21,M
+ab_347,STOVER,D.,"5, rue des Trois Chandeliers",93200,ST DENIS,42,F
+ab_348,SANTAMARIA BALBAS,A.,"28, Promenade Maxime Gorki",92700,COLOMBES,19,M
+ab_349,ROUSSEAU,C.,"4, allee de l'Essonne",92300,LEVALLOIS PERRET,50,F
+ab_350,ROZAS,N.,"33, boulevard d'Auteuil",75020,PARIS,27,M
+ab_351,VINCENT,M.,"361, rue Lecourbe",94420,LE PLESSIS TREVISE,59,F
+ab_352,WICKERSHEIMER,S.,"37, le Larris",75015,PARIS,22,M
+ab_353,VARACHE,B.,"13, rue de Brement",93160,NOISY LE GRAND,23,M
+ab_354,VIEIRA,A.,"4, av. Marthe",77154,VILLENEUVE LES BORDE,29,M
+ab_355,JOLY,B.,"64, rue du Pont de Creteil",95000,CERGY,50,F
+ab_356,YONI,B.,"12, rue du Chevalier de la Barre",92260,FONTENAY AUX ROSES,60,F
+ab_357,SENGCHANH,V.,"663, Chemin des Antiquailles",92100,BOULOGNE,55,F
+ab_358,QUER,N.,les Fontaines Biton,91210,DRAVEIL,23,M
+ab_359,TIXIER,B.,12/963 Res. Aquitaine,91800,EPINAY SOUS SENART,19,M
+ab_360,VOGIN,S.,"6, av. E. Deschanel",92600,ASNIERES,20,M
+ab_361,TABOUMENT,D.,"13, av. Estienne d'Orves",93500,PANTIN,49,F
+ab_362,VORADETH,K.,"14, rue Charles Michels",75019,PARIS,39,F
+ab_363,SICOT SOURBIEU,D.,allee de la Socal,92290,CHATENAY MALABRY,44,M
+ab_364,JACQUET,P.,"2, rue Picabia",92000,NANTERRE,49,F
+ab_365,JEANNE,M.,"6, rue Maurice Demenitroux",75007,PARIS,50,F
+ab_366,JOHNSSON,C.,"26, rue Olivier de Serres",75005,PARIS,32,F
+ab_367,JOLIBOIS,L.,"3, Villa Juge",93200,SAINT DENIS,49,F
+ab_368,JOLY,B.,"64, rue du Pont de Creteil",95000,CERGY,30,F
+ab_369,JOSTE,L.,"3, rue Joyeuse",92100,BOULOGNE,18,M
+ab_370,JOUANIQUE WESSER,M.,"1, rue Rossini",75016,PARIS,28,M
+ab_371,JOUET,J.,"48, rue Michel Ange",78170,LA CELLE ST CLOUS,18,F
+ab_372,JUDES,G.,"21, allee Lindet Girard",92310,SEVRES,49,F
+ab_373,JULIEN,J.,"66, rue Saint Lazare",75010,PARIS,40,F
+ab_374,KEPPI,M.,"17, rue Cassette",94100,ST MAUR,21,M
+ab_375,KIS,Z.,"197, route de Versailles",75009,PARIS,80,F
+ab_376,KOSSAK,A.,"8, rue de Mousaia",92100,BOULOGNE,28,M
+ab_377,KWIATKOWSKI,A.,"2, allee Clement Ader",75012,PARIS,21,F
+ab_378,LABEILLE,H.,"83, rue Belliard",92200,NEUILLY,18,M
+ab_379,LACHAMBRE,F.,"46, rue Saint Georges",94320,THIAIS,46,F
+ab_380,LACOSTE GARANGER,S.,le Bel Avenir,75013,PARIS,32,F
+ab_381,GREGOIRE,P.,"7, rue Urbain de Fargues",75017,PARIS,50,F
+ab_382,LAMBERT,R.,9/1 rue Breve,92100,BOULOGNE,37,M
+ab_383,LANOOTE,H.,"3, bd Carnot",77550,MOISSY CRAMAYEL,29,M
+ab_384,LAPENNE,P.,"21 A, bd Guist Hau",91290,ARPAJON,29,M
+ab_385,LARIVIERE,P.,"81, rue St Dominique",94370,SUCY EN BRIE,32,F
+ab_386,LARROUY,J.,"4, rue Beranger",95000,CERGY,21,M
+ab_387,LATAPPY,B.,"15, rue Chauveau",92210,SAINT CLOUD,71,F
+ab_388,LAVAL,P.,"26, rue du Marechal Leclerc",93470,COUBRON,59,F
+ab_389,LAVERGNE,J.,"5, rue Salengro",75017,PARIS,52,M
+ab_390,LE COQ,C.,"13-15, av. du Petit parc",78300,POISSY,72,F
+ab_391,LE DIRAISON,S.,"8, Rc Remont",92800,PUTEAUX,38,M
+ab_392,LE GUILLOU,J.,"20, rue Bleriot",78780,MAURECOURT,30,M
+ab_393,LEBLOND,F.,"15, rue Nelaton",92600,ASNIERES,21,F
+ab_394,GUEZENNEC,F.,15 Rdp des Martyrs,92130,ISSY LES MOULINEAUX,56,F
+ab_395,GREGOIRE,P.,"7, rue Urbain de Fargues",75017,PARIS,29,M
+ab_396,DECHENOIX,B.,"10, allee du Glacis",75017,PARIS,67,F
+ab_397,SAGLIO,J.,"1, allee du Carretey Beausejour",92300,LEVALLOIS PERRET,49,F
+ab_398,WHOOLEY,S.,"47, rue des Vinaigriers",75002,PARIS,28,M
+ab_399,LEBOISSELIER,M.,"3, Res. Bel Horizon",94500,CHAMPIGNY,23,M
+ab_400,LECORNU,V.,"45, av. J.b. Clement",75015,PARIS,63,F
+ab_401,LEFEBVRE,J.,C/ M. Anderson,92120,MONTROUGE,60,F
+ab_402,LEFORT,S.,parc Rocheplaine,93230,ROMAINVILLE,25,M
+ab_403,LEGRAIN,M.,"105, av. du Belvedere",75008,PARIS,20,M
+ab_404,LEIB,P.,"101, av. Thiers",92700,COLOMBES,39,F
+ab_405,LEIB,G.,"12, rue de la Fraternite",94400,VITRY,36,F
+ab_406,LEJEUNE,E.,"3, square du Nord",75116,PARIS,42,M
+ab_407,LEMOINE,M.,"14-16, rue Croix Saint Marc",93310,LE PRE ST GERVAIS,44,M
+ab_408,LENOIR,J.,"17, av. Mac-mahon",92400,COURBEVOIE,50,M
+ab_409,LEQUIMENER,P.,"68,68 rue des Vignes",95350,ST BRICE SOUS FORET,48,F
+ab_410,LEROY,A.,"10, quai Saint Vincent",75018,PARIS,18,M
+ab_411,LEROY,M.,"35 bis, rue des Trente Arpents",94120,FONTENAY SOUS BOIS,45,F
+ab_412,LIBOUBAN,M.,"8, allee du Dr Dupytin",93140,BONDY,70,F
+ab_413,LIGNERES,N.,"34, av. de Suffren",75004,PARIS,26,M
+ab_414,LETRAIT,M.,"20, rue des Polyanthas",93600,AULAY SOUS BOIS,49,M
+ab_415,LOMBARD,F.,"26, place Delille",77500,CHELLES,23,M
+ab_416,LITTAYE,P.,"8, rue Clos du Moulin",78670,VILLENNES SUR SEINE,50,F
+ab_417,MARTINON,X.,"31, rue Cecile Dinant",75011,PARIS,30,F
+ab_418,LORENZON,S.,"10, rue Planchat",94500,CHAMPIGNY,40,F
+ab_419,LOUBIERE,J.,"11, Res. de la Mare Neuve",92100,BOULOGNE,22,M
+ab_420,LUONG,N.,"19, av. Paul Doumer",92100,BOULOGNE,36,M
+ab_421,MAITRE,B.,"11, Bd. Soult",93130,NOISY LE SEC,18,M
+ab_422,MAGE,D.,"36, rue Amiral Courbet",77420,CHAMPS SUR MARNE,29,M
+ab_423,MAGNA,J.,"4, rue des Tourniquets",94400,VITRY SUR SEINE,27,M
+ab_424,MAILLARD,M.,16 quai Pierre Brossolette,93110,ROSNY SOUS BOIS,72,F
+ab_425,MAILLOT,M.,"15, quai du Pont de Creteil",92190,MEUDON,28,M
+ab_426,MALHO GAMEIRO,J.,"8, rue de Battenheim",93290,TREMBLAY LES GONESSE,29,M
+ab_427,MALLET,C.,"45, rue de Magnolles",94430,CHENNEVIERE SUR MARN,33,M
+ab_428,MALYE,P.,"170, rue Pasteur",92100,BOULOGNE,21,M
+ab_429,MARAN,H.,C/ S.p.a.,93350,VILLIERS SUR MARNE,24,M
+ab_430,MARIN,P.,"16, rue Leo Desjardins",92100,BOULOGNE,44,M
+ab_431,MARTIN,C.,"68, rue Adrien Lagourgue",92800,PUTEAUX,35,M
+ab_432,MONNET,P.,"3, rue de la Tremoille",75017,PARIS,24,M
+ab_433,MARTIN,Y.,"8, rue de Porto Riche",92300,LEVALLOIS PERRET,44,F
+ab_434,MARTINON,X.,"31, rue Cecile Dinant",75011,PARIS,19,M
+ab_435,MATHIEU,P.,"23, bd des Batignolles",92200,NEUILLY SUR SEINE,35,M
+ab_436,MAUDUIT,M.,"30, rue de la Vallee de l'Eure",77000,MELUN,40,F
+ab_437,MAURO,R.,"1, rue Rouget de l'Isle",95200,SARCELLES,43,F
+ab_438,MAITRE,B.,"11, Bd. Soult",93130,NOISY LE SEC,24,F
+ab_439,MEDINA,M.,Residence Euterne,75017,PARIS,19,M
+ab_440,MEINNIER,Y.,"86, Corniche Kennedy",75007,PARIS,20,M
+ab_441,MENDELSSOHN,F.,"87, av. Gabriel Peri",75015,PARIS,44,F
+ab_442,MERCIER,C.,"1, allee des Pepinieres",75003,PARIS,30,M
+ab_443,MESSMER,D.,"12, avenue Parmentier",93470,COUBRON,27,M
+ab_444,MICHEL,C.,"26, rue Poncelet",75011,PARIS,70,F
+ab_445,MICHELOT,C.,"21, rue du General Leclerc",75016,PARIS,59,F
+ab_446,MIGNEN,C.,"8, bd du Montparnasse",95000,CERGY,73,F
+ab_447,NOEL,N.,"1, bd Maxime Gorki",92190,MEUDON,79,F
+ab_448,MONCHICOURT,M.,"7, rue Servandonni",95800,CERGY ST CHRISTOPHE,41,F
+ab_449,MONGARDE,N.,"3, rue des Tuileries",77670,SAINT MAMMES,30,M
+ab_450,MONNET,P.,"3, rue de la Tremoille",75017,PARIS,47,F
+ab_451,MONSERRAT,P.,"37, rue des Archives",75007,PARIS,24,M
+ab_452,MOTTRON,A.,"18, rue Carnot",92160,ANTONY,41,F
+ab_453,MORA,L.,"5, rue Bougainville",75013,PARIS,24,M
+ab_454,MOREL,P.,"98, av. de Paris",94100,SAINT MAUR,24,M
+ab_455,MOTTET,P.,"22, rue Jean Allemane",93130,NOISY LE SEC,22,M
+ab_456,MOULIERAC,O.,"2, rue du Professeur Calmette",92230,GENNEVILLIERS,20,M
+ab_457,MOUSSA,M.,"22, rue Leon Martine",75006,PARIS,47,F
+ab_458,MURE,M.,"7, rue Henri Wallon",75020,PARIS,20,M
+ab_459,MENARD,L.,"48, bd de Vaugirard",78500,SARTROUVILLE,48,M
+ab_460,METAYER,P.,"20, rue du Prof. du Buisson",75014,PARIS,22,M
+ab_461,NASTAIL,M.,"6, rue Pierre Leroux",75007,PARIS,19,M
+ab_462,NAVARRO,J.,Chemin du Puits de l'Oeuvre,78600,MAISONS LAFITTE,34,F
+ab_463,PATRAT,B.,"72, route de Milon",75015,PARIS,50,M
+ab_464,MGUYEN THI,K.,"37, rue du Dr Villers",75011,PARIS,41,F
+ab_465,NICOLAS,J.,"7, allee des Myosotis",95110,SANNOIS,28,M
+ab_466,NOEL,N.,"1, bd Maxime Gorki",92190,MEUDON,44,F
+ab_467,NONOTTE,C.,"14, bd Paul Langevin",75017,PARIS,42,F
+ab_468,NOTTET,H.,"2, rue Degas",75005,PARIS,28,F
+ab_469,OEHLERT,J.,"48, rue des Tournelles",75001,PARIS,26,M
+ab_470,OGIER,S.,"6, allee des Hauts de Chennevieres",75011,PARIS,30,M
+ab_471,OLIVIER,L.,"46, Chemin du Maillefer",75018,PARIS,49,M
+ab_472,OSSARD,R.,"16, av. Niel",75005,PARIS,37,F
+ab_473,OULEY,P.,"46, allee des Coteaux",75012,PARIS,38,F
+ab_474,PAAPE,I.,"141, rue Vermeir",75018,PARIS,30,F
+ab_475,PAGET,Y.,"9, rue L. Vannini",75015,PARIS,30,F
+ab_476,PALAZZESCHI,J.,"10, rue des Bauvettes",75015,PARIS,32,M
+ab_477,PANNOCCHIA,M.,"10, rue Renoir",94520,MANDRES LES ROSES,29,M
+ab_478,PARIGOT,M.,"16, av. Leon Blum",92200,NEUILLY,22,M
+ab_479,PARINI,J.,"61, rue de Garlande",75015,PARIS,78,F
+ab_480,PARMELAND,J.,"33, av. du General de Gaulle",75012,PARIS,77,F
+ab_481,PASTOL,J.,"192, rue Diderot",94400,VITRY SUR SEINE,24,M
+ab_482,PATRAT,B.,"72, route de Milon",75015,PARIS,43,M
+ab_483,PEIRAZEAU,M.,"2, av. des Chambards",91270,VIGNEUX SUR SEINE,33,F
+ab_484,PERNICE,S.,"91, av. Emile Zola",75007,PARIS,23,M
+ab_485,PERQUIN,C.,"3 bis, rue de Dammarie",75005,PARIS,25,M
+ab_486,PERRIN,C.,"105, rue du Connetable",92210,SAINT CLOUD,45,M
+ab_487,PETIT,O.,Res. Etang du Moulin,75116,PARIS,23,M
+ab_488,PEUCH,J.,"4, rue des 3 Resistants",75014,PARIS,40,F
+ab_489,PHAM VAN SUU,J.,"24, rue du Mail",75016,PARIS,67,F
+ab_490,PHISANOUKHAN,D.,"31, rue Saint Placide",94470,BOISSY ST LEGER,27,M
+ab_491,PIATON,J.,"2, place Sainte Croix",92310,SEVRES,33,F
+ab_492,PILET,J.,"4, av. du General Balfourier",94360,BRY SUR MARNE,42,M
+ab_493,PINCEMAIL,J.,"4, passage Sainte Avoye",78000,VERSAILLE,28,F
+ab_494,POCHARD,D.,"27, rue Vital",77210,AVON,30,M
+ab_495,POISSON,J.,"7 bis, av. Andree",92110,CLICHY,19,M
+ab_496,PONCE,M.,"36-42, rue de la Villette",91130,RIS ORANGIS,28,M
+ab_497,POQUET,P.,"23, rue de la Cote du Nord",75013,PARIS,19,M
+ab_498,POUGATCH,J.,"21, rue Fresnel",75006,PARIS,36,F
+ab_499,POULAIN,T.,"26, rue Hermel",91400,ORSAY,26,M
+ab_500,PRAT,J.,"41, rue de Brancion",75016,PARIS,50,F
+ab_501,PRIER,P.,"19, rue Saint Paul",75004,PARIS,29,M
+ab_502,PRONIER,G.,"7, rue Henri Dunand",91330,YERRES,43,F
+ab_503,PULLICINO,C.,"55, rue Rabelais",94800,VILLEJUIF,58,F
+ab_504,PY,A.,"12, rue Pierre Lescot",94550,CHEVILLY LARUE,52,F
+ab_505,LECOQ,M.,"24, rue Galopin",93290,TREMBLAY LES GONESSE,50,M
+ab_506,PACEY,S.,"12, allee des Erables",93100,MONTREUIL SOUS BOIS,80,F
+ab_507,MINET,G.,"11, rue Borde",94300,VINCENNES,66,F
+ab_508,MAGUI,F.,"24, rue la Fontaine",77184,EMERAINVILLE,27,M
+ab_509,LURIER,C.,"22, rue de Tocqueville",77400,LAGNY SUR MARNE,29,M
+ab_510,MENARD,V.,"24, rue Gutemberg",75003,PARIS,33,F
+ab_511,LE SAUSSE,L.,"1, rue de Bearn",94100,ST MAUR DES FOSSES,43,F
+ab_512,LUTON,T.,"14, rue Allende",91300,MASSY,75,F
+ab_513,JANASIK,E.,"48, rue Rebeval",75019,PARIS,37,F
+ab_514,PERRY,A.,"8, square Barye",94350,VILLIERS SUR MARNE,21,M
+ab_515,NGUYEN,V.,"6, rue J.m. de Heredia",92100,BOULOGNE,67,F
+ab_516,PRATS,B.,"66, rue Rolland Garros",94170,LE PERREUX,27,M
+ab_517,LEMAIRE,J.,"15, rue Garbon",75003,PARIS,19,M
+ab_518,MERIOT,F.,"23, rue de Constantinople",75018,PARIS,21,M
+ab_519,MOUCHEL,N.,"113, rue de l'Abbe Groult",93320,LES PAVILLONS SOUS B,39,F
+ab_520,LEBLANC,D.,"27, av. du 11 Novembre",91300,MASSY,31,F
+ab_521,JACQUEY,F.,"6, allee de la Noiseraie",94550,CHEVILLY LARUE,73,F
+ab_522,MONTERO LOPEZ,C.,"101, Bd. de la Republique",75018,PARIS,38,F
+ab_523,LEROY,T.,"145, rue de Chevilly",93390,CLICHY SOUS BOIS,45,M
+ab_524,MARTEL,J.,"81, rue Saint Dominique",94100,ST MAUR,20,M
+ab_525,JAAFAR,M.,"14, av. Henri 4",94210,LA VARENNE ST HILAIR,66,M
+ab_526,KHAMSY,E.,"121, rue de Longjumeau",93420,VILLEPINTE,78,F
+ab_527,LEVY,N.,"17, av. Victor Hugo",94000,VILLEJUIF,50,F
+ab_528,MELLAK,M.,"6, place Ampere",94340,JOINVILLE LE PONT,73,F
+ab_529,MENARD,V.,"24, rue Gutemberg",75003,PARIS,46,F
+ab_530,PHANOUVONG,S.,"122, rue Nationale",75003,PARIS,45,F
+ab_531,MAINGAUD,C.,"101, av. du 25eme Rts",91170,VANVES,53,F
+ab_532,JOMINY,A.,"14, rue des Pavillons",92120,MONTROUGE,40,F
+ab_533,OZIER LAFONTAINE,A.,"19, rue Lucien Sampaix",75004,PARIS,28,M
+ab_534,KHAMVONGSA,C.,"11, rue Saint Exupery",75014,PARIS,65,M
+ab_535,KHAMSAY,M.,"11, rue des Chardonerettes",92320,CHATILLON SOUS BAGNE,23,M
+ab_536,NICOLI LOUBERE,B.,Chemin du Stade,77100,MEAUX BEAUVAL,32,F
+ab_537,NGUYEN,T.,"24, allee Henard Et Walker",94000,VILLEJUIF,18,M
+ab_538,PHANOUVONG,B.,"82, rue Corneille",75017,PARIS,46,F
+ab_539,METTERIE,P.,"4, rue du Petit Duc",75018,PARIS,43,M
+ab_540,MASTAIL,M.,2 Car Croix Rouge,75019,PARIS,41,F
+ab_541,JACQUEY,F.,"6, allee de la Noiseraie",94550,CHEVILLY LARUE,46,F
+ab_542,PIVAIN,C.,"18, rue Vavin",77000,MELUN,19,M
+ab_543,METZ,J.,"195, rue E. Combes",75007,PARIS,26,M
+ab_544,NILUSMAS,V.,Res. les Plages,75011,PARIS,44,F
+ab_545,PHILIPPE,P.,"52, rue de Bellevue",75008,PARIS,30,M
+ab_546,MENEL,L.,"1, rue Rossini",75017,PARIS,27,M
+ab_547,PILO,S.,"39, rue Claude Bernard",92400,COURBEVOIE,28,M
+ab_548,MARECHAL,G.,Villa Mazel,75009,PARIS,63,F
+ab_549,LEULLIER,F.,"88, av. Jean Jaures",92210,ST CLOUD,38,F
+ab_550,PETRONIO,P.,"16, rue Detancourt",95100,ARGENTEUIL,77,F
+ab_551,KODJOED,J.,"18, rue de Bellevue",75002,PARIS,69,F
+ab_552,KELIEL BENGABBOU,H.,"58, rue du Pont de Creteil",94350,VILLIERS SUR MARNE,29,M
+ab_553,MONCEAU,N.,"1, rue de la Plumerette",93600,AULNAY SOUS BOIS,26,M
+ab_554,LEFEBVRE,J.,le Peyrat,75018,PARIS,30,M
+ab_555,PARQUET,J.,Bueil En Touraine,78240,CHAMBOURCY,22,M
+ab_556,MIGNEN,C.,"6, Chemin Touton",93000,NOISY LE SEC,66,F
+ab_557,MORISSET,S.,"23, rue de Berne",94430,CHENNEVIERES,46,F
+ab_558,VERONE,G.,"15, rue d'Italie",75012,PARIS,24,M
+ab_559,METTERIE,P.,"4, rue du Petit Duc",75018,PARIS,21,M
+ab_560,LAURENT,J.,"15, Grande rue",75010,PARIS,63,F
+ab_561,LE BARAZER,E.,"3, rue des Jonquilles",75009,PARIS,22,M
+ab_562,LEBLOIS,M.,"62, rue Brancion",75017,PARIS,21,M
+ab_563,LOSHOUARN,T.,Res. Etang du Moulin,93400,SAINT OUEN,51,F
+ab_564,PASCAL,J.,"14, rue Jean Brunet",92800,PUTEAUX,67,F
+ab_565,LEROUX,B.,"4, rue Pierre de Ronsard",75006,PARIS,25,M
+ab_566,LAIDOUNI,O.,"159, rue Legendre",75006,PARIS,46,M
+ab_567,LEVRARD,L.,"6, rue des Capucins",94370,SUCY EN BRIE,41,F
+ab_568,LAPEYRADE,S.,"124, rue Compans",75005,PARIS,37,F
+ab_569,PEYRONEL,F.,"6, place de la Louviere",75010,PARIS,67,F
+ab_570,LANGLAIS,E.,"28, rue de la Reine Blanche",95000,CERGY,38,F
+ab_571,LE ROY,M.,"77, rue Lecomte",92100,BOULOGNE,33,F
+ab_572,MILLET,L.,"113 bis, rue de la Republique",91700,STE GENEVIEVE DES BO,25,M
+ab_573,LEFEUVRE,M.,"35, rue du Mont Valerien",93300,AULNAY SOUS BOIS,37,F
+ab_574,LE MAO,Y.,"32 bis, rue des Lyonnais",92140,CLAMART,30,M
+ab_575,MESNEL,F.,"5 bis, rue Saint Joseph",75008,PARIS,30,F
+ab_576,MENASCE,J.,"7, rue Moliere",75017,PARIS,45,M
+ab_577,PONCE,C.,"12, Res. les Chenes",94000,CRETEIL,19,M
+ab_578,PHOMMAVONG,S.,"51, rue Notre Dame de Nazareth",93000,BOBIGNY,47,F
+ab_579,LANGOT,M.,"25, rue des Acacias",92100,BOULOGNE,30,M
+ab_580,MACCIO,W.,"10, allee Brancas",94500,CHAMPIGNY SUR MARNE,20,M
+ab_581,LAURENT,J.,"15, Grande rue",75010,PARIS,43,F
+ab_582,LE GENTIL,P.,"93, rue Mademoiselle",75018,PARIS,26,M
+ab_583,JOUANNIC,Y.,"48, av. Joffre",93150,LE BLANC MESNIL,75,F
+ab_584,LLORENS,A.,"2, bd des Oiseaux",92300,LEVALLOIS,29,M
+ab_585,POINCARE,A.,"9, Grande place",94300,VINCENNES,31,F
+ab_586,PELLARIN,B.,"3, rue du Chateau",75006,PARIS,24,M
+ab_587,LAIDOUNI,O.,"159, rue Legendre",75006,PARIS,28,M
+ab_588,LOPEZ,J.,allee du Puy Maury,93220,GAGNY,20,M
+ab_589,LIPMAN,S.,"25, Villa du Petit parc",78150,TRIEL SUR SEINE,49,F
+ab_590,LAFORGE,F.,"173, rue Championnet",92700,COLOMBES,20,F
+ab_591,MANDORLA,J.,"1, Villa Poirier",75008,PARIS,39,F
+ab_592,MACHADO,H.,"6, square Chanton",75007,PARIS,25,M
+ab_593,MAURICE,P.,"83, rue du 11 Novembre 1918",92290,CHATENAY MALABRY,32,M
+ab_594,MORGAINE BERTHOLET,S.,"161, rue de Rimard",75014,PARIS,35,F
+ab_595,LOISEL,B.,"101, rue Boucicaut",92800,PUTEAUX,22,F
+ab_596,MECHINEAUD,D.,"12, square Louis Jouvet",75014,PARIS,37,M
+ab_598,NOBLET,V.,"133, bd Saint Symphorien",75007,PARIS,28,M
+ab_599,POULAIN,P.,"25, rue Oudry",75015,PARIS,23,M
+ab_600,LANGER,A.,"12, rue Gabriel Griffon",91300,MASSY,78,F
+ab_601,MATHEZ,V.,"23, rue du Chemin Vert",75015,PARIS,54,F
+ab_602,LABORIE,B.,"40, rue du Mont Valerien",91170,VIRY CHATILLON,80,F
+ab_603,ALEXANDRE,M.,la Cheze,91800,BOUSSY SAINT ANTOINE,45,F
+ab_604,LOUIS,F.,"89, Bd. Pasteur",75017,PARIS,32,M
+ab_605,LHERITIER,D.,"164, rue de Saussure",75016,PARIS,29,M
+ab_606,LEVEQUE,M.,"129, av. Aristide Briand",75011,PARIS,46,F
+ab_607,JAMET,A.,"12, rue E. Vaillant",93330,NEUILLY SUR MARNE,25,M
+ab_608,MONTHUIS,J.,allee de la Clairiere,93160,NOISY LE GRAND,65,F
+ab_609,MICHAUDET,P.,"19, bd Sebastopol",94120,FONTENAY SOUS BOIS,56,F
+ab_610,OLIVIERI,M.,"45, rue Poncelet",75015,PARIS,41,F
+ab_611,JACQUET,N.,"61, rue Brancion",78330,FONTENAY LE FLEURY,25,M
+ab_612,LOPEZ,J.,"170, rue Sadi Carnot",92200,NEUILLY SUR SEINE,30,F
+ab_613,OLIVIER,N.,"5 bis, allee Rulhiere",92000,NANTERRE,21,M
+ab_614,FONTERAY,J.,"9, rue Bernard Palissy",94600,CHOISY LE ROI,37,M
+ab_615,RAGOT,G.,"16, av. du Puy de Gravenoire",75020,PARIS,22,M
+ab_616,GUINARD,C.,"42, rue Neuve",94420,LE PLESSIS TREVISE,74,F
+ab_617,SPICHT,P.,"8, rue Renault",94300,VINCENNES,50,F
+ab_618,ABDELLATIF,M.,"17, rue de l'Ancienne Comedie",75006,PARIS,66,F
+ab_619,ADDE,N.,"19, rue Jeanne d'Arc",75012,PARIS,79,F
+ab_620,ADDINSELL,S.,"12, av. de la Lorraine",75019,PARIS,29,M
+ab_621,ADONIS,S.,"18, rue du Soleil Levant",93240,STAINS,68,F
+ab_622,AGUILLEE,M.,"34, rue de Guyenne",92370,VERRIERES LE BUISSON,26,M
+ab_623,ALBERTON,Y.,"39, rue de Douai",77300,FONTAINEBLEAU,22,M
+ab_624,ALEXANDRE,M.,la Cheze,91800,BOUSSY SAINT ANTOINE,27,M
+ab_625,AMAND,C.,"2, impasse du Champs de Mars",92200,NEUILLY,73,F
+ab_626,AMBROISE,F.,"13, rue de l'Yser",93160,NOISY LE GRAND,18,M
+ab_627,AMIEL,M.,"34, av. Ledru Rollin",92270,BOIS COLOMBES,18,M
+ab_628,AMORIN,B.,"48, av. Lamartine",75017,PARIS,18,M
+ab_629,ANGER,N.,le Leynard,93140,BONDY,28,M
+ab_630,AREL,L.,"17 bis, rue Rivay",75015,PARIS,26,M
+ab_631,ASSADET,P.,"106, av. Denfert Rochereau",92130,ISSY LES MOULINEAUX,26,M
+ab_632,ATLAN,M.,"10, av. Flachat",75017,PARIS,23,M
+ab_633,AUBERT,F.,"84, rue du Ranelagh",75018,PARIS,55,F
+ab_635,AYALA,B.,"6, Res. Buffont",94100,ST MAUR,41,M
+ab_636,BACANE CAZEMAVE,F.,"42, rue de Montigny",94360,BRY SUR MARNE,37,F
+ab_637,BACQUE CAZENAVE,F.,la Sylvarianne - Chemin de Rossigny,77220,TOURNAN EN BRIE,26,M
+ab_638,BAIGES,J.,"22, rue H. Berlioz",75116,PARIS,26,M
+ab_639,BALLANGE,S.,"174, avenue des Provinces",92800,PUTEAUX,38,F
+ab_640,BANNAIS,C.,"20, rue du Debarcadere",94220,CHARENTON,18,M
+ab_641,BARBERA,I.,"397, Corniche Kennedy",91600,SAVIGNY SUR ORGE,34,F
+ab_642,BARNOYER,V.,"100, bd Massena",75018,PARIS,31,M
+ab_643,BAROTTE,S.,"16, av. de Villiers",75004,PARIS,67,F
+ab_644,BARRAY,P.,"53, av. Charles de Gaulle",94160,SAINT MANDE,33,M
+ab_645,BARRIERE,J.,"7, av. Beaucour",94400,VITRY,29,F
+ab_646,BARROUDI,M.,"14, rue Gutemberg",92380,GARCHES,20,M
+ab_647,BARTHE,P.,"17, rue Burq",92200,NEUILLY SUR SEINE,40,F
+ab_648,BASSET,J.,"54, rue du Chateau d'Eau",91480,VARENNES JARCY,69,F
+ab_649,BOYE,M.,"5, rue Anna Jacquin",75019,PARIS,20,M
+ab_650,BAUDEY,J.,"2 Et 4, av. du Chateau",75015,PARIS,23,M
+ab_651,BAUMONT,C.,"10, rue Mesloy",94100,SAINT MAUR,73,F
+ab_652,BELLIN,C.,"14, rue Francais",94000,CRETEIL,37,F
+ab_653,BENDANI,A.,"1, rue Perronet",92100,BOULOGNE,44,F
+ab_654,BENOIST GIRONIERE,D.,"32, av. Emile Zola",92130,ISSY LES MOULINEAUX,26,M
+ab_655,BENTZ,J.,"68, rue Sadi Carnot",75005,PARIS,26,M
+ab_656,BERGSTEN,E.,"57, rue de Seine",92170,VANVES,36,M
+ab_657,BERTHON,M.,Res le Maillane,75016,PARIS,50,M
+ab_658,JUBIN,A.,"14, rue Marcel Cachin",92360,MEUDON LA FORET,18,M
+ab_659,BENOIT,A.,"48, rue Monsieur le Prince",75017,PARIS,41,M
+ab_660,GAPILLOUT,D.,"7, place de la Sapiniere",91350,GRIGNY PRINCIPALE,68,F
+ab_661,LE CAM,F.,"12, av. du General Leclerc",75016,PARIS,30,F
+ab_662,REMOND,C.,"6, rue des Lilas",91350,GRIGNY PRINCIPALE,30,F
+ab_663,GAUCHERY,D.,"17, rue Andre Del Sarte",75005,PARIS,24,M
+ab_664,MARICHAL,P.,"977-1, av de la Republique",92130,ISSY LES MOULINEAUX,59,F
+ab_665,BESOMBES,M.,route de Villiny,94000,CRETEIL,68,F
+ab_666,BESSE,V.,"40, rue Chappron",94100,SAINT MAUR,78,F
+ab_667,BEZOULLE,N.,"3-5, rue Jean Brunet",75017,PARIS,24,M
+ab_668,BIGNON,L.,"62, rue du Col. de Rochebrune",91480,VARENNES JARCY,24,M
+ab_669,BILLEREAU,C.,"10, Bd. Dubreuil",92360,MEUDON LA FORET,49,F
+ab_670,BILLERE,M.,Mas Gines,92200,NEUILLY SUR SEINE,30,M
+ab_671,BISCHOFF,R.,"45, rue Pasteur",92170,VANVES,40,F
+ab_672,BLAISE,A.,Grange Coum Prat Ar Coum,94220,CHARENTON,30,M
+ab_673,BLANCHE,E.,"27, rue Clavel",92800,PUTEAUX,46,F
+ab_674,BLANQUART,A.,Lieu Dit le Pont,75116,PARIS,27,M
+ab_675,BOCCHINI,J.,"56-60, rue de l'Amiral Mouchez",77220,TOURNAN EN BRIE,23,M
+ab_676,BOCQUET,A.,"11, rue Lamblardie",92100,BOULOGNE,63,F
+ab_677,BODEREAU,S.,"19, impasse Plaisance",92200,NEUILLY,42,M
+ab_678,BOKHANOWSKI,I.,"27, rue des Platanes",75017,PARIS,69,F
+ab_679,BONHOMME,M.,Apt 584 rue A. de Musset,75015,PARIS,28,M
+ab_680,BONNEFOND,C.,"14, rue du Lievre",93240,STAINS,23,M
+ab_681,BONNET,P.,"7, rue Tisserand",75019,PARIS,47,F
+ab_682,BONNET,M.,"16, av. de la Coudraie",92380,GARCHES,32,M
+ab_683,BOSC,D.,"87, rue Saint-dominique",75020,PARIS,70,F
+ab_684,BOTTIER,A.,"18, bd J.j. Rousseau",94600,CHOISY LE ROI,25,M
+ab_685,BOUCHAUD,J.,"16, rue du 11 Novembre 1918",94120,FONTENAY SOUS BOIS,37,F
+ab_686,BOUIGES,J.,"56, rue Botzaris",93160,NOISY LE GRAND,50,F
+ab_688,BOUNPHENG,A.,"160, rue de la Pompe",93330,NEUILLY SUR MARNE,23,M
+ab_689,BOURGAULT,M.,"182, rue de la Liberation",75011,PARIS,25,M
+ab_690,BOURGOIS,S.,"36, allee Thiellement",94400,VITRY,27,M
+ab_691,BOURSINHAC,G.,"108, av. de la Corse",94160,SAINT MANDE,69,F
+ab_692,BOUVIER,P.,"78, avenue du General Leclerc",75017,PARIS,47,M
+ab_693,BOUYER,P.,"40, rue Roger Poullain",75015,PARIS,44,M
+ab_694,BRAUD,A.,"8, rue Duban",94400,VITRY,58,F
+ab_695,BRIAND,F.,"18, rue du Docteur Germain See",75014,PARIS,80,F
+ab_696,BRIEZ,F.,"2, allee Clement Ader",92800,PUTEAUX,22,M
+ab_697,BRODIER,N.,"16, Alle de l'Avenir",92290,CHATENAY MALABRY,44,F
+ab_698,BRUNET,J.,"43, av. de la Republique",75004,PARIS,44,F
+ab_699,BEATSON,A.,"12, av. de Lorraine",92700,COLOMBES,70,F
+ab_700,BREHU,R.,"58, av. Jean Moulin",75018,PARIS,59,F
+ab_701,CADET,G.,"15, av. Pavie",91600,SAVIGNY SUR ORGE,47,F
+ab_702,CADO,M.,Maison 16ème,78150,TRIEL SUR SEINE,32,F
+ab_703,CAHOUET,M.,"7, rue du Chemin des Vinots",75006,PARIS,19,M
+ab_704,CAILLET,A.,"42, av. Lenine",75006,PARIS,26,M
+ab_705,CALAIS,Y.,23 bd av. des Tuyas,94360,BRY SUR MARNE,47,F
+ab_706,CALCERRADA,E.,"44, rue des Meuniers",94100,ST MAUR,52,M
+ab_707,CALLIGARO,L.,"1-3, Mail F. Garcia Lorca",92300,LEVALLOIS,44,F
+ab_708,CAMILLERI,M.,"3, quai Lamennais",93150,LE BLANC MESNIL,36,F
+ab_709,CAPITAINE,M.,1 rue Perronet,91700,STE GENEVIEVE DES BO,63,F
+ab_710,CAPPANNELLI,C.,"59, av. Franklin Roosevelt",75015,PARIS,27,M
+ab_711,MOTTET,P.,"8, rue de la Bucherie",75018,PARIS,26,F
+ab_712,BOUNTHENE,K.,"26 bis, avenue de la Paix",75017,PARIS,47,F
+ab_713,CARMONA,M.,"10, rue Planchat",75018,PARIS,21,M
+ab_714,CARPIN,M.,"7, rue Jacob",78240,CHAMBOURCY,24,M
+ab_715,CARTERET,A.,"20, rue du Forum",92400,COURBEVOIE,79,F
+ab_716,CASSIERE TRAULLE,G.,"123, rue de Verdun",75017,PARIS,71,F
+ab_717,CASTELLENGO,G.,"33, quai du Port de Creteil",92130,ISSY LES MOULINEAUX,27,M
+ab_719,CAYZAC,A.,"2, rue Fabien Calloud",75015,PARIS,52,F
+ab_720,CHABAUD,D.,"142, rue de Courcelles",75017,PARIS,19,M
+ab_721,CHAFFARD,C.,"36, bis, rue Malatire",75014,PARIS,77,F
+ab_722,CHAPERON,J.,"2, rue des Noisetiers",93140,BONDY,50,F
+ab_723,CHAPLET,N.,"1, rue des Bauches",92270,BOIS COLOMBES,27,M
+ab_724,CHARLES,J.,"49, rue Lacordaire",92120,MONTROUGE,32,F
+ab_725,CHARMOILLE,V.,"40, rue de Bretagne",93500,PANTIN,53,F
+ab_726,CHARPENTIER,S.,"13, av. du parc de Proce",93160,NOISY LE GRAND,44,F
+ab_727,CHARRUAUT,J.,"26, rue Rolland",92100,BOULOGNE,32,F
+ab_728,CHASLE,J.,"1, rue Jacques Duclos",91330,YERRES,48,F
+ab_729,CHASSAGNE,N.,"40, rue Orfila",91400,ORSAY,77,F
+ab_730,CHAUVIN,A.,"123, route de Montereau",92200,NEUILLY,34,F
+ab_731,CHEDMAIL,E.,"1, route de Colombe",91800,BOUSSY SAINT ANTOINE,21,M
+ab_732,CHESNAY,L.,"6, rue du Mail",77210,AVON,20,M
+ab_733,CHEVALIER,D.,"5, rue Alexandre Bickart",75005,PARIS,18,M
+ab_734,CHOVOGEON,Y.,"120, rue Grande",77300,FONTAINEBLEAU,30,M
+ab_735,CLARKE,P.,"11, rue Pauly",92370,VERRIERES LE BUISSON,50,F
+ab_736,CLEMENT,A.,"4, Res. du Chateau d'Eau",75015,PARIS,36,F
+ab_737,COHEN TANUGI,P.,"67, rue Garibaldi",94400,VITRY SUR SEINE,54,F
+ab_738,COLLART,A.,"34, rue Regret",75012,PARIS,40,F
+ab_739,COLLINSON,D.,"79, quai A. Citroen",92200,NEUILLY,49,F
+ab_740,ASSADET,M.,rue Basse de Saint Eloi,94520,MANDRES LES ROSES,23,M
+ab_741,COMTE,S.,"81, rue Reaumur",75015,PARIS,31,F
+ab_742,CONSTANT,V.,"11, square J. Moulin",75019,PARIS,24,M
+ab_743,CORDARO,P.,"130, bd Pereire",75012,PARIS,30,F
+ab_744,CORNA,A.,"2, square du Canigou",75006,PARIS,26,M
+ab_745,CORRAL,C.,"88, avenue de la Corniche Fleurie",94300,VINCENNES,21,M
+ab_746,COULOMBEL,Y.,"62, av. Foch",94420,LE PLESSIS TREVISE,21,M
+ab_747,COURVOISIER,P.,"30, rue des Roches Fleuries",75012,PARIS,71,F
+ab_749,CRALL,C.,"3, rue Larmeroux",75005,PARIS,56,F
+ab_750,CECILLE,H.,"9, rue Murillo",75018,PARIS,28,M
+ab_751,CHASSERIAU,C.,"26, rue Pierre Demours",92000,NANTERRE,62,F
+ab_752,AUFFRAY,J.,"32, rue Waldeck Rousseau",75011,PARIS,49,M
+ab_753,ALLOUCHE,R.,"84, rue du Fbg St Martin",75005,PARIS,62,F
+ab_754,COLL,P.,"103, avenue Victor Hugo",75017,PARIS,22,M
+ab_755,CLAUDE,C.,"45, rue de la Turbine",95110,SANNOIS,26,M
+ab_756,BESSAOUDI,M.,"175, rue de la Convention",92200,NEUILLY SUR SEINE,50,F
+ab_757,ALLEGRE,A.,"3 ter, av. J.b. Clement",78600,MAISONS LAFITTE,26,M
+ab_758,CRECHET,I.,"19, rue Marceau",75007,PARIS,28,M
+ab_759,ARNOUX,G.,"89, Chemin Jean Roubin",78500,SARTROUVILLE,32,M
+ab_760,ANTONY,N.,"23, rue des Ecouffes",78330,FONTENAY LE FLEURY,28,M
+ab_761,BRUNEL,V.,"3, rue de Lang",75020,PARIS,69,F
+ab_762,ALFONSI,A.,"1, route du Champs d'Entrainement",92230,GENNEVILLIERS,36,F
+ab_763,CARPIN,M.,"58, rue de Maubeuge",93130,NOISY LE SEC,18,M
+ab_764,CARIOT,J.,"350, rue Lecourbe",77670,SAINT MAMMES,24,M
+ab_765,BENAZET,F.,"25, rue Blatin",95800,CERGY ST CHRISTOPHE,27,M
+ab_766,CONSO,A.,"33, route du Plessis",95000,CERGY,19,M
+ab_767,ARAKELIAN,A.,"3, rue J.p. Rameau",75011,PARIS,76,F
+ab_768,ARBOUCHE,U.,"9, rue Mathurin Regnier",93470,COUBRON,28,M
+ab_769,COUVREUR,M.,"3 C, rue de la Gerbe d'Or",75015,PARIS,18,M
+ab_770,CHABROL,V.,"7, rue Saint Rames",75007,PARIS,68,F
+ab_771,CAYOL,M.,"7, rue Anatole France",95200,SARCELLES,19,M
+ab_772,ALLOUCHE,D.,"51, rue de Longchamps",93500,PANTIN,56,F
+ab_774,BONAVENT,G.,"13, impasse Michelon",77420,CHAMPS SUR MARNE,40,F
+ab_775,CAZAMEA,M.,"7, Chemin des Faux Valets",93600,AULAY SOUS BOIS,42,M
+ab_776,BENOIST,N.,"23, rue des Longs Pres",93310,LE PRE ST GERVAIS,28,M
+ab_777,BLAZY,I.,"6, allee des Hauts de Chenneviers",75116,PARIS,70,F
+ab_778,CAZORLA,G.,"22, rue de Tocqueville",94400,VITRY,19,M
+ab_779,BOBO,J.,"10, rue des Chenes",75016,PARIS,77,F
+ab_780,CUISSET,J.,"36 bis, rue Malatire",92700,COLOMBES,67,F
+ab_781,COLOMER,P.,"18, allee des Roziers",94190,VILLENEUVE ST GEORGE,42,F
+ab_782,BAUDE,M.,"8, rue Servandoni",92120,MONTROUGE,42,F
+ab_783,BOYER,F.,"101, rue de Reuilly",75015,PARIS,67,F
+ab_785,BURGUN,R.,"195, rue E. Combes",94500,CHAMPIGNY,19,M
+ab_786,BASSIBE,M.,"40 bis, rue Fabert",92600,ASNIERES,27,M
+ab_787,BORNE,F.,"6-8, rue Achille Martinet",91170,VIRY CHATILLON,25,M
+ab_788,CAMPILLO,A.,"24, rue Lepic",92800,PUTEAUX,35,M
+ab_789,CHANOZ,M.,"7, square de la Bievre",78300,POISSY,62,F
+ab_790,CHASSEDIEU,J.,"22, rue Jeanne d'Arc",75017,PARIS,52,F
+ab_791,BILTZ,P.,"148, bd Malesherbes",93470,COUBRON,24,M
+ab_792,BATISTA,N.,"104, rue de la Boetie",95000,CERGY,30,M
+ab_793,BLANCHO,Y.,"12, rue Joseph Coma",75015,PARIS,39,F
+ab_794,CLAIRET,A.,"15, rue Cesar Sornin",92100,BOULOGNE,24,M
+ab_795,CHIDLOVSKY,V.,"1, rue Hondritz de Bas",94320,THIAIS,59,F
+ab_796,BERTRAND,C.,"4, allee des Dimanches",92100,BOULOGNE,52,F
+ab_797,BOUYGE,A.,"2, place Gaston Dourdin",75016,PARIS,69,F
+ab_798,BAUDINOT,E.,"27, rue Demouilles",92100,BOULOGNE,72,F
+ab_799,BREIL GOLFIER,A.,"5, rue J.j. Rousseau",75005,PARIS,66,F
+ab_800,AUFFREDOU,F.,"54, rue Jean Jaures",92600,ASNIERES,28,M
+ab_801,ANSELMO,T.,"5, cour Notre Dame",75007,PARIS,19,M
+ab_802,CATTA,L.,"1, Cheminement Clair Bois",91800,EPINAY SOUS SENART,63,F
+ab_803,CAZES,C.,"8, rue Paul Cezanne",75001,PARIS,20,M
+ab_804,BASTARD,H.,"85, rue Myhla",75014,PARIS,25,M
+ab_805,BULUCUA,A.,"2, Villa Bretagne",75007,PARIS,50,F
+ab_806,CUVELLIER,C.,"132, rue du Renard",75008,PARIS,72,F
+ab_807,BREXEL,C.,"2, rue Vauvilliers",93220,GAGNY,62,F
+ab_808,CATALIFAUD,P.,"3, rue Viete",94300,VINCENNES,65,F
+ab_809,COSME,L.,"12, rue Eugene Millon",75018,PARIS,50,F
+ab_811,BALLET,G.,C/ M. Souza,75010,PARIS,49,M
+ab_813,BOUCHY,D.,"32, rue Lacepede",91100,CORBEIL,39,F
+ab_814,CHAMARD,G.,"68, rue Dulong",92700,COLOMBES,35,M
+ab_815,COLAUTTI,H.,"9, rue Lalo",95400,ARNOUVILLE GONESSE,38,M
+ab_816,BOUDOULEC DJIAN,C.,"18, bd Aristide Briand",75011,PARIS,30,F
+ab_817,BONICALZI,P.,les Jardins de Changis,75014,PARIS,47,M
+ab_818,BIANCO,F.,"5, rue A. Bourdelle",75012,PARIS,67,F
+ab_819,GUILLEM,A.,Chemin de la Regie,93200,SAINT DENIS,24,M
+ab_820,MELYON,F.,les Landes Courtillers,92130,ISSY LES MOULINEAUX,38,M
+ab_821,LEGRAIN,M.,"22, rue Copernic",92000,NANTERRE,37,M
+ab_822,RESULME,R.,"290, rue de Paris",92000,NANTERRE,33,F
+ab_823,FOURTANE,V.,"6, rue Michelet",93260,LES LILAS,24,M
+ab_824,BUISSERET,P.,"20, Chemin des Montquartiers",93100,MONTREIL,21,M
+ab_825,BANHARES,R.,"7, rue Saint Joseph",75004,PARIS,41,F
+ab_826,BERNARDEAU,C.,"37, rue Censier",91940,LES ULIS,76,F
+ab_827,COULARDEAU,J.,"402, la Closerie",91160,LONGJUMEAU,32,M
+ab_828,JARDINE,F.,"56, av. de Verdun",94240,L'HAY LES ROSES,25,M
+ab_829,LASKRI,L.,"2, Hameau des Cigales",94240,L'HAY LES ROSES,28,M
+ab_830,TEILLER,T.,"29, quai du Pont de Creteil",75013,PARIS,51,F
+ab_831,VIEL,M.,"41, av. de Bellevue",93160,NOISY LE GRAND,22,M
+ab_832,OLIVIERI,M.,"3, place du Petit College",78470,GRESSELY,50,F
+ab_833,ROUBIEU,J.,"1, rue des Trois Maisons",94500,CHAMPIGNY SUR MARNE,38,M
+ab_834,BOUTOUYRIE,B.,"81, av. A. Schneider",78460,CHEVREUSE,22,M
+ab_835,PICHON,J.,Chemin des Longues Raies,95130,LE PLESSIS BOUCHARD,57,M
+ab_836,LENDEN,J.,les Playes,93410,VAUJOURS,24,M
+ab_837,MORAT,M.,"3, rue Silbermann",92100,BOULOGNE,60,F
+ab_838,HEIM,J.,"65, les Bosquets",75003,PARIS,69,F
+ab_839,SILVA,V.,"40, rue des Preaux",75019,PARIS,58,F
+ab_840,FUNES,N.,"7, rue des Hirondelles",75017,PARIS,32,F
+ab_841,BLANCARD,M.,"3, rue de Buci",94700,MAISONS ALFORT,24,M
+ab_842,EXPERT,V.,"5, allee des Coprions",93100,MONTREUIL,40,F
+ab_843,DABET,R.,"4, rue de l'Industrie",75013,PARIS,63,F
+ab_844,VAN HELLEPUTTE,D.,"2, rue Marcellin Berthelot",94100,ST MAUR,26,M
+ab_845,MENDES,E.,"6, rue J.m. de Heredia",91210,DRAVEIL,77,M
+ab_846,BALLET,G.,"5, rue Pasteur",93000,BOBIGNY,59,F
+ab_847,JEUDI,M.,"36, rue Burdeau",75015,PARIS,31,M
+ab_848,MINOST,J.,"1047, av. de la Resistance",78120,RAMBOUILLET,35,F
+ab_849,CHARRON,F.,"5, rue Montaigne",77520,MONTIGNY LENCOU,50,M
+ab_850,DROUILHAT,C.,"3, av. du General de Gaulle",75006,PARIS,71,F
+ab_851,TJEPKEMA,E.,"21, bd de Grenelle",75013,PARIS,29,M
+ab_853,MINVIELLE,V.,"214, bd Voltaire",93100,MONTREUIL,35,F
+ab_855,LEVI,S.,"82, rue Rosa-bonheur",94000,CRETEIL,80,F
+ab_856,GUAY,D.,"8, av. Anatole France",92110,CLICHY,56,F
+ab_857,HOCQ,F.,"26, rue Jean Mermoz",92220,BAGNEUX,26,M
+ab_858,HURAND,D.,12 rue Greuze,75018,PARIS,57,F
+ab_860,ANGRAND,L.,"22, rue du Pont de Creteil",93110,ROSNY SOUS BOIS,51,F
+ab_861,NIOLET,M.,"6, Clos de Verrieres",75015,PARIS,27,M
+ab_862,BOCQUET,A.,"30, rue de la Clef",75012,PARIS,50,F
+ab_863,FAJOLLE,L.,"46, rue du Docteur Roux",91740,PUSSAY,63,F
+ab_864,BEAUFILS,M.,"130, route de la Reine",75015,PARIS,40,M
+ab_865,BERNARDIN,T.,"45, rue Volta",92130,ISSY LES MOULINEAUX,55,F
+ab_867,DE RIVIERE,F.,"8, rue Leopold Robert",75014,PARIS,22,M
+ab_868,GASPARIN,C.,"1233, rue Herbeuse",75018,PARIS,61,F
+ab_869,LESAGE,K.,"1, rue de la Fosse Aux Moines",75016,PARIS,69,F
+ab_870,SIEGFRID,C.,"10, allee du Pigeon Blanc",92320,CHATILLON/ BAGNEUX,30,M
+ab_872,SANSAT,C.,rue d'Amont,75017,PARIS,73,F
+ab_873,MALLET PONCE,F.,"653, av. de Chatillon",75008,PARIS,18,M
+ab_874,COTTIGNIES,B.,"17, av. Pierre Brossolette",92290,CHATENAY MALABRY,71,F
+ab_875,SCHACHER,W.,"10, rue Olier",92000,NANTERRE,59,F
+ab_876,CHEVIS,V.,"11, rue Rousselet",75003,PARIS,19,M
+ab_877,HOFSTETTER,P.,"11, rue E. Pottier",92170,VANVES,52,F
+ab_878,JOUTET,R.,"21, rue de la Perverie",75018,PARIS,37,M
+ab_879,MASELEK,N.,"1, square",94120,FONTENAY SOUS BOIS,67,F
+ab_880,SALLE,N.,"25, rue du Sommerard",75010,PARIS,28,M
+ab_881,SOMMAVILLA,A.,"131, rue de l'Universite",75006,PARIS,24,M
+ab_882,CAPRON,I.,"255, rue Saint Denis",75006,PARIS,21,M
+ab_883,HUC,S.,"12, impasse Compoint",93340,LE RAINCY,67,F
+ab_884,MARTIN,P.,"8, av. Gabriel Peri",94700,MAISONS_ALFORT,44,M
+ab_885,SEMBLER,M.,"127, av. Jean Jaures",92210,SAINT_CLOUD,51,F
+ab_886,PAILLET,C.,"60, Chemin de l'Epinette",93390,CLICHY SOUS BOIS,28,M
+ab_887,FINSTERBUSCH,S.,"8, av. du General de Gaulle",92100,BOULOGNE,27,M
+ab_888,HEIM,M.,"90, av. Pablo Picasso",91160,BALIZY,77,F
+ab_889,DIEUDONNE,M.,"13, rue Alexandre Fleming",92200,NEUILLY,30,F
+ab_890,BUSSIERE,P.,"12, rue J. Cesar",94230,CACHAN,24,M
+ab_891,NANTOIS,D.,"11, rue des Plants Bruns",92140,CLAMART,30,M
+ab_892,MAIGNAN,E.,"130, route de la Reine",75006,PARIS,24,M
+ab_893,DE MONTDIDIER,P.,"43, rue de la Ferme",92100,BOULOGNE,26,M
+ab_894,MOGGIO,M.,"42, rue du Chemin Vert",75012,PARIS,67,F
+ab_895,CHALMONT,F.,"7, rue Petion",75014,PARIS,30,M
+ab_896,DAUBIER,M.,"19, rue des Belges",77590,BOIS LE ROI,27,M
+ab_897,JOUAULT,C.,"23, rue des Cloys",92380,GARCHES,70,F
+ab_898,MEKEL,M.,"37, rue de la Garenne",92600,ASNIERES,27,M
+ab_899,CHAMBORD,H.,"161, rue de la Pierre Levee",93500,PANTIN,51,F
+ab_900,BETIN,N.,"6, rue Matisse",92800,PUTEAUX,27,M
+ab_901,BERTHIER,M.,"44, rue Berzeluis",77186,NOISIEL,35,F
+ab_902,BERTAULT,S.,"66, rue de la Saussiere",75018,PARIS,19,M
+ab_903,PERRIN,T.,"87, rue Curial",91100,SAINTRY SUR SEINE,32,M
+ab_904,DELANOY,J.,"12, boulevard Pasteur",91390,morsang sur orge,80,F

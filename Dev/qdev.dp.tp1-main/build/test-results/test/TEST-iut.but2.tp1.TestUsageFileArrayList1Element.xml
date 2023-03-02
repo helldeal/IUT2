@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="iut.but2.tp1.TestUsageFileArrayList1Element" tests="10" skipped="0" failures="0" errors="0" timestamp="2022-10-20T07:38:42" hostname="U-INF-J-E113-04" time="0.031">
+  <properties/>
+  <testcase name="taille()" classname="iut.but2.tp1.TestUsageFileArrayList1Element" time="0.017"/>
+  <testcase name="consult0()" classname="iut.but2.tp1.TestUsageFileArrayList1Element" time="0.001"/>
+  <testcase name="consult10()" classname="iut.but2.tp1.TestUsageFileArrayList1Element" time="0.002"/>
+  <testcase name="suppr_taille()" classname="iut.but2.tp1.TestUsageFileArrayList1Element" time="0.001"/>
+  <testcase name="suppr()" classname="iut.but2.tp1.TestUsageFileArrayList1Element" time="0.002"/>
+  <testcase name="suppr_listefin()" classname="iut.but2.tp1.TestUsageFileArrayList1Element" time="0.002"/>
+  <testcase name="listedebut()" classname="iut.but2.tp1.TestUsageFileArrayList1Element" time="0.0"/>
+  <testcase name="listeFin()" classname="iut.but2.tp1.TestUsageFileArrayList1Element" time="0.0"/>
+  <testcase name="suppr_listedebut()" classname="iut.but2.tp1.TestUsageFileArrayList1Element" time="0.001"/>
+  <testcase name="suppr_consult()" classname="iut.but2.tp1.TestUsageFileArrayList1Element" time="0.001"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

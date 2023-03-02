@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="TestPaquesJulienne" tests="6" skipped="0" failures="0" errors="0" timestamp="2022-10-20T09:54:16" hostname="U-INF-J-E113-04" time="0.005">
+  <properties/>
+  <testcase name="testPaquesJulienne1492()" classname="TestPaquesJulienne" time="0.0"/>
+  <testcase name="testPaquesJulienne125()" classname="TestPaquesJulienne" time="0.001"/>
+  <testcase name="testPaquesJulienne324()" classname="TestPaquesJulienne" time="0.0"/>
+  <testcase name="testPaquesJulienne325()" classname="TestPaquesJulienne" time="0.0"/>
+  <testcase name="testPaquesJulienne326()" classname="TestPaquesJulienne" time="0.0"/>
+  <testcase name="testPaquesJulienne327()" classname="TestPaquesJulienne" time="0.001"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

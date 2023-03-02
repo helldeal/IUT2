@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="TestHashtable" tests="12" skipped="0" failures="0" errors="0" timestamp="2022-11-10T14:06:11" hostname="U-INF-J-C001-23" time="0.035">
+  <properties/>
+  <testcase name="testElementDejaPresent()" classname="TestHashtable" time="0.015"/>
+  <testcase name="testUnElement()" classname="TestHashtable" time="0.009"/>
+  <testcase name="testNoColisions()" classname="TestHashtable" time="0.001"/>
+  <testcase name="testSupprimer_elementAbsent()" classname="TestHashtable" time="0.001"/>
+  <testcase name="testVide()" classname="TestHashtable" time="0.0"/>
+  <testcase name="testPlusieursElements()" classname="TestHashtable" time="0.001"/>
+  <testcase name="testColision_2()" classname="TestHashtable" time="0.001"/>
+  <testcase name="testSupprimer_elementCollision()" classname="TestHashtable" time="0.0"/>
+  <testcase name="testColision()" classname="TestHashtable" time="0.0"/>
+  <testcase name="testRedimensionnement_1()" classname="TestHashtable" time="0.001"/>
+  <testcase name="testRedimensionnement_20()" classname="TestHashtable" time="0.0"/>
+  <testcase name="testSupprimer()" classname="TestHashtable" time="0.0"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="iut.but2.tp1.TestUsageFileArrayListPlusieursElements" tests="11" skipped="0" failures="0" errors="0" timestamp="2022-10-20T07:38:42" hostname="U-INF-J-E113-04" time="0.054">
+  <properties/>
+  <testcase name="consultations()" classname="iut.but2.tp1.TestUsageFileArrayListPlusieursElements" time="0.02"/>
+  <testcase name="deuxSuppr_listedebut()" classname="iut.but2.tp1.TestUsageFileArrayListPlusieursElements" time="0.001"/>
+  <testcase name="deuxSuppr_listefin()" classname="iut.but2.tp1.TestUsageFileArrayListPlusieursElements" time="0.001"/>
+  <testcase name="listes()" classname="iut.but2.tp1.TestUsageFileArrayListPlusieursElements" time="0.001"/>
+  <testcase name="troisSuppr_consult()" classname="iut.but2.tp1.TestUsageFileArrayListPlusieursElements" time="0.001"/>
+  <testcase name="taille()" classname="iut.but2.tp1.TestUsageFileArrayListPlusieursElements" time="0.001"/>
+  <testcase name="deuxSuppr()" classname="iut.but2.tp1.TestUsageFileArrayListPlusieursElements" time="0.001"/>
+  <testcase name="deuxSuppr_consult()" classname="iut.but2.tp1.TestUsageFileArrayListPlusieursElements" time="0.001"/>
+  <testcase name="troisSuppr_listeDebut()" classname="iut.but2.tp1.TestUsageFileArrayListPlusieursElements" time="0.018"/>
+  <testcase name="troisSuppr()" classname="iut.but2.tp1.TestUsageFileArrayListPlusieursElements" time="0.001"/>
+  <testcase name="troisSuppr_listeFin()" classname="iut.but2.tp1.TestUsageFileArrayListPlusieursElements" time="0.0"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

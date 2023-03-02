@@ -1,0 +1,67 @@
+### wrong route
+GET  http://localhost:3000/bad
+
+### GET /user
+GET http://localhost:3000/user
+
+### GET /user/{login} OK
+GET http://localhost:3000/user/anything
+
+### POST /user empty body
+POST http://localhost:3000/user
+
+### POST /user partial body
+POST http://localhost:3000/user
+Content-Type: application/json
+
+{
+  "login": "jo"
+}
+
+### POST /user other data-type
+POST http://localhost:3000/user
+Content-Type: application/x-www-form-urlencoded
+
+login=jo&password=pass
+
+### POST /user wrong data-type
+POST http://localhost:3000/user
+Content-Type: application/json
+
+login=jo&password=pass
+
+### GET /user after insert
+GET http://localhost:3000/user
+
+### DELETE /user/not_here
+DELETE http://localhost:3000/user/kk
+
+### DELETE /user/jojo OK
+DELETE http://localhost:3000/user/jo
+
+###UPDTA /user/not_here
+PUT http://localhost:3000/user/jo
+Content-Type: application/json
+
+{
+  "login": "lapin",
+  "password": "pass"
+}
+
+###UPDTA /user/lapin
+PUT http://localhost:3000/user/lapin
+Content-Type: application/json
+
+{
+  "login": "lapin",
+  "password": "pass2"
+}
+
+###UPDTA /user/lapin change login
+ PUT http://localhost:3000/user/lapin
+Content-Type: application/json
+
+{
+  "login": "lapin2",
+  "password": "pass2"
+}

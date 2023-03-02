@@ -1,0 +1,1271 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<book version="5.1" xmlns="http://docbook.org/ns/docbook"
+      xmlns:xlink="http://www.w3.org/1999/xlink"
+      xmlns:xila="http://www.w3.org/2001/XInclude/local-attributes"
+      xmlns:xi="http://www.w3.org/2001/XInclude"
+      xmlns:trans="http://docbook.org/ns/transclusion"
+      xmlns:svg="http://www.w3.org/2000/svg"
+      xmlns:m="http://www.w3.org/1998/Math/MathML"
+      xmlns:html="http://www.w3.org/1999/xhtml"
+      xmlns:db="http://docbook.org/ns/docbook">
+  <info>
+    <title>R3.01 : Développement web</title>
+
+    <author>
+      <personname><firstname/><surname/></personname>
+
+      <affiliation>
+        <orgname>IUT Nantes département Informatique</orgname>
+      </affiliation>
+    </author>
+
+    <pubdate>2022</pubdate>
+  </info>
+
+  <chapter>
+    <title>Présentation</title>
+
+    <section>
+      <title>Objectif</title>
+
+      <para>Dans la ressource R1.02:Développementd’interfaces web, vous avez
+      appris à réaliser des pages web statiques. Dans cette ressource nous
+      allons produire des pages Web dynamiques via un serveur
+      <acronym>HTTP</acronym> (Hypertext Transfer Protocol). Le langage choisi
+      est <acronym>PHP</acronym> (Hypertext Preprocessor), un langage de
+      script impératif orienté objet. Pour la persistance de nos données nous
+      utiliserons le <acronym>SGBD</acronym> (Système de Gestion de Base de
+      Données) MariaDB et le moteur de base de données SQLite.</para>
+
+      <para>Nous disposons dans cette ressource de 6 créneaux de 1h20 de CM et
+      de 16 créneaux de TD à raison de 2 par semaine. Voici une progression
+      indicative :</para>
+
+      <informaltable>
+        <tgroup cols="2">
+          <tbody>
+            <row>
+              <entry>Semaines</entry>
+
+              <entry>Objectifs</entry>
+            </row>
+
+            <row>
+              <entry>1..2</entry>
+
+              <entry>Le client serveur</entry>
+            </row>
+
+            <row>
+              <entry>3..4</entry>
+
+              <entry>Le Modèle Vue Contrôleurs</entry>
+            </row>
+
+            <row>
+              <entry>5</entry>
+
+              <entry>Évaluation</entry>
+            </row>
+
+            <row>
+              <entry>6..7</entry>
+
+              <entry>Le framework CodeIgniter</entry>
+            </row>
+
+            <row>
+              <entry>8</entry>
+
+              <entry>Évaluation</entry>
+            </row>
+          </tbody>
+        </tgroup>
+      </informaltable>
+    </section>
+
+    <section>
+      <title>Évaluations</title>
+
+      <para>Les <acronym>TD</acronym> (Travaux dirigés) se décomposent en deux
+      grandes parties, l'apprentissage du développement web dynamique en
+      <acronym>PHP</acronym> en utilisant le patron de conception
+      <acronym>MVC</acronym> (Modèle Vue Contrôleur) et l'extension
+      <acronym>PDO</acronym> (PHP Data Objects) pour la persistance, puis
+      l'utilisation du framework CodeIgniter et de l'<acronym>ORM</acronym>
+      (Object Relational Mapper) Doctrine. Après chacune de ses parties, vous
+      aurez une évaluation machine, cette ressource contribuera également à la
+      <acronym>SAE</acronym> (Situation d'Apprentissage et
+      d'Évaluation).</para>
+    </section>
+  </chapter>
+
+  <chapter>
+    <title>Apprentissage de PHP</title>
+
+    <para>Nous allons apprendre <acronym>PHP</acronym> en construisant une
+    application qui permet de commander des produits.</para>
+
+    <section>
+      <title>Le client serveur</title>
+
+      <para>Les protocoles ou environnement client serveur sont un mode de
+      transaction ou le client envoie une requête pour obtenir une réponse du
+      serveur. On dit que le serveur offre des services qui sont sollicités
+      par les clients. Le serveur pouvant lui même être client d'un autre
+      serveur.</para>
+
+      <para>Nous aurons un serveur <acronym>HTTP</acronym>, un serveur
+      <acronym>SQL</acronym> (Structured Query Language) et un interpréteur
+      <acronym>PHP</acronym>.</para>
+
+      <figure>
+        <title>Exemple de requête</title>
+
+        <mediaobject>
+          <imageobject>
+            <imagedata fileref="data/svg/requete_HTTP.svg" scalefit="1"
+                       width="80%"/>
+          </imageobject>
+        </mediaobject>
+      </figure>
+
+      <procedure>
+        <step>
+          <para>Le client <acronym>HTTP</acronym> effectue une requête en
+          spécifiant une <acronym>URL</acronym> ;</para>
+        </step>
+
+        <step>
+          <para>Le serveur <acronym>HTTP</acronym> en fonction de l'extension
+          de fichier renvoie directement la page (.htm, .html) ou passe la
+          main à l'interpréteur <acronym>PHP</acronym> (.php) ; l'interpréteur
+          PHP interpréte les scripts PHP identifiés par la balise
+          <code>&lt;?php //TODO ?&gt;</code>, la balise peut apparaître
+          plusieurs fois dans un même fichier mais l'interprétation est unique
+          ;</para>
+        </step>
+
+        <step>
+          <para>si le script fait appel à un serveur <acronym>SQL</acronym>
+          alors une requête <acronym>SQL</acronym> est envoyée au serveur
+          <acronym>SQL </acronym>;</para>
+        </step>
+
+        <step>
+          <para>la réponse du serveur <acronym>SQL</acronym> est est renvoyée
+          par le serveur <acronym>SQL</acronym> puis utilisée par
+          l'interpréteur <acronym>PHP </acronym>;</para>
+        </step>
+
+        <step>
+          <para>l'interpréteur fourni le fichier créé à au serveur
+          <acronym>HTTP </acronym>;</para>
+        </step>
+
+        <step>
+          <para>La réponse est enfin fournie au client
+          <acronym>HTTP</acronym>.</para>
+
+          <para>Comme vous l'observez vous aller mettre en oeuvre vos acquis
+          du <acronym>BUT1</acronym>,
+          <acronym>HMTL</acronym>/<acronym>CSS</acronym>,
+          <acronym>SQL</acronym>, réseaux. <acronym>PHP</acronym> étant un
+          langage orienté objet vous devez également mobiliser vos compétences
+          dans ce domaine.</para>
+        </step>
+      </procedure>
+
+      <section>
+        <title>Les requêtes</title>
+
+        <para>Pour chaque exercice, vous aurez à consulter la documentation
+        officielle <acronym>PHP</acronym> :
+        <uri>https://www.php.net/docs.php</uri>.</para>
+
+        <section>
+          <title>Exécuter un script sur le serveur</title>
+
+          <para>Le serveur <acronym>HTTP</acronym> que nous allons utiliser
+          est <emphasis>srv.infoweb.iut-nantes.univ-nantes.prive</emphasis>.
+          C'est un serveur apache configuré pour que chaque utilisateur
+          dispose d'un espace de publication, le répertoire
+          <filename>/home/userXXX/public_html</filename> est disponible via
+          l'URL
+          <uri>http://srv-infoweb.iut-nantes.univ-nantes.prive/~userXXX</uri>.</para>
+
+          <para>Pour déposer un script sur le serveur vous allez devoir
+          utiliser un protocole de transfert de fichiers à
+          l'<acronym>IUT</acronym>, ce sera <acronym>SFTP</acronym>
+          (<acronym>SSH</acronym> (Secure Shell) File Transfer Protocol). Pour
+          réaliser les transferts, nous allons utiliser un client, ubuntu
+          dispose d'un client graphique utilisable comme suit : <procedure>
+              <step>
+                <para>ouvrir l'explorateur de fichier (Nautilus) ;</para>
+              </step>
+
+              <step>
+                <para>utiliser la raccourci clavier <keycombo>
+                    <keycap>CTRL+L</keycap>
+                  </keycombo> pour afficher le chemin absolu ;</para>
+              </step>
+
+              <step>
+                <para>saisir l'url
+                sftp://srv-infoweb.iut-nantes.univ-nantes.prive/~userXXX, vous
+                identifier</para>
+              </step>
+
+              <step>
+                <para>Vous avez maintenant un point de montage vous permettant
+                d'accéder à vos fichiers distants.</para>
+              </step>
+            </procedure></para>
+
+          <para>Créer un fichier avec l'extension .php contenant un script
+          (<code>&lt;?php phpinfo(); ?&gt;</code>) qui lui même utilise la
+          fonction <function>phpinfo()<footnote>
+              <para>https://www.php.net/manual/fr/function.phpinfo.php</para>
+            </footnote></function>, déposer ce fichier sur votre espace de
+          publication et déclenchez l'exécution du script via votre
+          navigateur.</para>
+
+          <para>Répondez au questions suivantes :</para>
+
+          <itemizedlist>
+            <listitem>
+              <para>Quelle est la version de <acronym>PHP</acronym> ?</para>
+            </listitem>
+
+            <listitem>
+              <para>Dans les protocoles, les requêtes contiennent une entête
+              et un corps, vous pouvez observer à travers votre navigateur
+              l'entête envoyée par votre client <procedure>
+                  <step>
+                    <para>clic droit :inspecter,</para>
+                  </step>
+
+                  <step>
+                    <para>network,</para>
+                  </step>
+
+                  <step>
+                    <para>rafraîchir,</para>
+                  </step>
+
+                  <step>
+                    <para>sélectionner la requête,</para>
+                  </step>
+
+                  <step>
+                    <para>header</para>
+                  </step>
+                </procedure>Où pouvez vous retrouver les informations du
+              header <acronym>HTTP</acronym> dans le résultat de l'exécution
+              du script ?</para>
+            </listitem>
+
+            <listitem>
+              <para>Les interpréteurs <acronym>PHP</acronym> dispose d'un
+              fichier de configuration (php.ini) qui limite les usages. Ici
+              quelle est la taille maximum d'upload d'un fichier ?</para>
+            </listitem>
+
+            <listitem>
+              <para>L'interpréteur <acronym>PHP</acronym> peut communiquer
+              avec son environnement et par exemple obtenir des informations
+              depuis le serveur <acronym>HTTP</acronym> au travers du tableau
+              <varname>$_SERVEUR</varname>. Une <acronym>URL</acronym>
+              <acronym>HTTP</acronym> peut contenir des fragments et parmis
+              ses fragments des paramètres peuvent-être passés, les paramètres
+              sont introduis par ?, ils sont sous la forme clef=valeur et sont
+              séparés par &amp;. Dans cet exemple
+              hhttp://www.exemple.com:80/chemin/vers/monfichier.html?clé1=valeur1&amp;clé2=valeur2#QuelquePartDansLeDocument
+              les paramètres sont clé1 et clé2 . Modifier
+              l'<acronym>URL</acronym> appelée pour passer en paramètres
+              code_departement avec comme valeur 44, ville avec comme valeur
+              Nantes et département avec comme valeur Loire Atlantique, que
+              contiennent $_SERVER['REQUEST_METHOD'], $_SERVER['QUERY_STRING']
+              ? Pourquoi l'espace a t-il été transformé en %20 ?</para>
+            </listitem>
+          </itemizedlist>
+        </section>
+
+        <section>
+          <title>Utiliser les méthodes de requête HTTP</title>
+
+          <para>Le protocole <acronym>HTTP</acronym> reconnaît des méthodes de
+          requête<footnote>
+              <para><uri>https://developer.mozilla.org/fr/docs/Web/HTTP/Methods</uri></para>
+            </footnote>, nous utiliserons dans ce cours :</para>
+
+          <variablelist>
+            <varlistentry>
+              <term>GET</term>
+
+              <listitem>
+                <para>pour récupérer des données</para>
+              </listitem>
+            </varlistentry>
+
+            <varlistentry>
+              <term>POST</term>
+
+              <listitem>
+                <para>pour envoyer des informations.</para>
+              </listitem>
+            </varlistentry>
+          </variablelist>
+
+          <para>Nous utiliserons deux clients : votre navigateur et
+          <command>curl</command> un client en ligne de commande. D'autres
+          clients comme postman et Insomnia REST Client existent, nous les
+          utiliserons le semestre prochain.</para>
+
+          <section>
+            <title>la méthode GET</title>
+
+            <para>Le trafic en <methodname>GET</methodname> est principalement
+            généré avec la barre d'<acronym>URL</acronym>, les ancres et les
+            formulaires. En <acronym>PHP</acronym>, les paramètres sont
+            récupérés avec le tableau <varname>$_GET</varname><footnote>
+                <para><uri>https://www.php.net/manual/fr/reserved.variables.get.php</uri></para>
+              </footnote>.</para>
+
+            <para><acronym>PHP</acronym> est un langage interprété faiblement
+            typé le type est inféré à l'exécution et une variable peut changer
+            de type<footnote>
+                <para><uri>https://www.php.net/manual/fr/language.variables.variable.php</uri></para>
+              </footnote>.</para>
+
+            <para>Pour afficher sur la sortie standard <acronym>PHP</acronym>
+            dispose de la fonction <function>echo</function><footnote>
+                <para><uri>https://www.php.net/manual/fr/function.echo.php</uri></para>
+              </footnote>, de la fonction <function>print</function><footnote>
+                <para><uri>https://www.php.net/manual/fr/function.print.php</uri></para>
+              </footnote> et de la fonction
+            <function>var_dump</function><footnote>
+                <para><uri>https://www.php.net/manual/fr/function.var-dump</uri></para>
+              </footnote>.</para>
+
+            <para>En <acronym>PHP</acronym>, les tableaux sont
+            associatifs<footnote>
+                <para><uri>https://www.php.net/manual/fr/book.array.php</uri></para>
+              </footnote>.</para>
+
+            <section>
+              <title>Afficher les paramètres</title>
+
+              <para>Nous utiliserons comme fragment de paramètres
+              <emphasis>?pseudo=laurent&amp;password=pass&amp;statut=admin</emphasis>.</para>
+
+              <para>Écrire un script <filename>get1.php</filename> qui utilise
+              <varname>$_GET</varname> et <function>var_dump</function> pour
+              produire l'affichage suivant : <screen>array(3) { ["pseudo"]=&gt; string(7) "laurent" ["login"]=&gt; string(4) "pass" 
+["status"]=&gt; string(5) "admin" }</screen> Dans un fichier
+              <acronym>PHP</acronym>, cohabitent du texte et des scripts,
+              entourer votre script avec les balises <code>&lt;pre&gt;
+              &lt;/pre&gt;</code>, vous devriez obtenir <screen>array(3) {
+  ["pseudo"]=&gt;
+  string(7) "laurent"
+  ["password"]=&gt;
+  string(4) "pass"
+  ["status"]=&gt;
+  string(5) "admin"
+}</screen></para>
+
+              <para><function>var_dump</function> est utilisée pour le
+              débogage, en utilisant <function>echo</function> et
+              <varname>$_GET["clef"]</varname> écrire un script
+              <filename>get2.php</filename> qui permet d'avoir la page
+              <acronym>HTML</acronym> 5 suivante : <screen>pseudo : laurent
+
+password : pass
+
+status : admin</screen>Pour rappel une page <acronym>HTML</acronym> a la
+              structure suivante : <programlisting>&lt;!doctype html&gt;
+&lt;html lang="fr"&gt;
+&lt;head&gt;
+  &lt;meta charset="utf-8"&gt;
+  &lt;title&gt;Test2&lt;/title&gt;
+  &lt;/head&gt;
+&lt;body&gt;
+  ...
+  &lt;!-- Le reste du contenu --&gt;
+  ...
+&lt;/body&gt;
+&lt;/html&gt;</programlisting></para>
+
+              <para>Nous avons utilisé trois fois <varname>$_GET</varname>,
+              nous pouvons améliorer notre script avec la boucle
+              <code>foreach</code><footnote>
+                  <para><uri>https://www.php.net/manual/fr/control-structures.foreach.php</uri></para>
+                </footnote>. Une syntaxe alternative est également possible
+              avec <code>&lt;?php foreach ($tab as $clef=&gt;$valeur): ?&gt;
+              &lt;?php endforeach;?&gt;</code>.</para>
+            </section>
+
+            <section>
+              <title>Envoyer des paramètres</title>
+
+              <para>Nous avons déjà envoyé des paramètres avec la barre
+              d'<acronym>URL</acronym>, nous pouvons également utiliser le
+              client en ligne de commande <command>curl</command>, vous pouvez
+              obtenir la documentation de <command>curl</command> avec
+              <code>man curl</code>. Tester et comprendre la commande
+              <code>curl -v --noproxy "*" -X GET
+              "http://srv-infoweb/~userXXX/chemin_dans_public_html_vers_votre_script/get2.php?pseudo=laurent&amp;login=pass&amp;statut=admin"</code><remark>srv-infoweb.iut-nantes.univ-nantes.prive
+              est aliasé, il se nomme</remark>.</para>
+
+              <para>Une autre solution est de créer un formulaire<footnote>
+                  <para><uri>https://developer.mozilla.org/fr/docs/Web/HTML/Element/Form</uri></para>
+                </footnote>, créer un formulaire<filename>
+              get2_form.html</filename> qui permet de saisir le pseudo et le
+              mot de passe, le statut sera envoyé avec un <code>input</code>
+              de type <code>hidden</code>.</para>
+
+              <para>Créer un document <acronym>HTML</acronym> 5 qui contient 2
+              ancres qui référencent le même script
+              <filename>get2.php</filename> dont chacune code un statut
+              différent, ici nous passons dans l'URL les informations pour le
+              serveur.<screen>je suis admin
+
+je suis visiteur</screen></para>
+            </section>
+          </section>
+
+          <section>
+            <title>la méthode POST</title>
+
+            <para>Il est impossible de générer un trafic en
+            <methodname>POST</methodname> depuis la barre
+            <acronym>d'URL</acronym>, en effet les paramètres ne sont plus
+            passés dans l'entête de la requête mais dans son corps. Il nous
+            faudra un formulaire ou un langage comme javascript pour générer
+            du <methodname>POST</methodname> depuis un navigateur.</para>
+
+            <para>Créer le fichier <filename>get_post.php</filename> qui devra
+            afficher les paramètres comme le faisait
+            <filename>get2.php</filename>, ce script devra fonctionner que la
+            requête soit en <methodname>GET</methodname> ou en Évaluation.
+            Vous aurez à utiliser <function>isset</function><footnote>
+                <para><uri>https://www.php.net/manual/fr/function.isset.php</uri></para>
+              </footnote>qui permet de savoir si une variable est déclarée et
+            est non nulle, vous aurez également à utiliser une
+            conditionnelle<footnote>
+                <para><uri>https://www.php.net/manual/fr/control-structures.if.php</uri></para>
+              </footnote>. Attention en <acronym>PHP</acronym>
+            <methodname>$_GET</methodname> est toujours déclaré car en vérité
+            il ne teste pas la méthode <acronym>HTTP</acronym> mais la
+            présence de paramètres dans le header.</para>
+
+            <para>Vous pourrez tester votre code avec <command>curl</command>
+            : <code>curl -v --noproxy "*" -d
+            "pseudo=laurent&amp;login=pass&amp;statut=admin" -H "Content-Type:
+            application/x-www-form-urlencoded" -X POST
+            "http://serveur/~user/chemin/get_post.php"</code>.</para>
+
+            <para>Pour finir créer un formulaire et tester.</para>
+          </section>
+        </section>
+      </section>
+
+      <section>
+        <title>Les cookies et les sessions</title>
+
+        <para>Le protocole <acronym>HTTP</acronym> est protocole sans état qui
+        n'enregistre pas l'état de session lors d'une communication entre deux
+        requêtes successives. Cependant le protocole <acronym>HTTP</acronym>
+        permet de remédier à ce problème en utilisant des cookies. Un cookie
+        est texte court envoyé par un serveur <acronym>HTTP</acronym> à un
+        client <acronym>HTTP</acronym>, que ce dernier renvoiera les
+        prochaines fois qu'il se connectera aux serveurs partageant le même
+        nom de domaine.</para>
+
+        <figure>
+          <title>Les cookies <acronym>HTTP</acronym></title>
+
+          <mediaobject>
+            <imageobject>
+              <imagedata fileref="data/svg/cookies.svg" scalefit="1"
+                         width="80%"/>
+            </imageobject>
+          </mediaobject>
+        </figure>
+
+        <para>Les cookies sont utilisés pour la personnalisation, la gestion
+        des sessions, le pistage, ...</para>
+
+        <section>
+          <title>La personnalisation</title>
+
+          <para>Depuis <acronym>HTML</acronym>5 les données peuvent-être
+          validées par le client et la mémoire conservée dans le navigateur,
+          les mêmes fonctionnalités peuvent être offertes par
+          <acronym>PHP</acronym>. Nous allons créer un formulaire
+          <filename>perisitent_form.php</filename> qui demandera le pseudonyme
+          et le mot de passe, si ce formulaire est consulté à nouveau alors le
+          pseudonyme doit rester pré-rempli, ce formulaire aura pour cible
+          <filename>authenticate.php</filename> qui créera le cookie.</para>
+
+          <figure>
+            <title>Cookie pour la personnalisation</title>
+
+            <mediaobject>
+              <imageobject>
+                <imagedata fileref="data/svg/cookie.svg" scalefit="1"
+                           width="20%"/>
+              </imageobject>
+            </mediaobject>
+          </figure>
+
+          <para>Le création d'un cookie est réalisée avec
+          <function>setcookie()</function><footnote>
+              <para><uri>https://www.php.net/manual/fr/function.setcookie.php</uri></para>
+            </footnote>. Attention, selon la configuration du serveur, la
+          création du cookie comme toute manipulation de l'entête
+          <acronym>HTTP</acronym> doit avoir lieu avant toute écriture sur la
+          sortie standard. La lecture est réalisée avec le table
+          <varname>$_COOKIE</varname><footnote>
+              <para><uri>https://www.php.net/manual/fr/reserved.variables.cookies.php</uri></para>
+            </footnote>.</para>
+
+          <para>Quelques conseils :</para>
+
+          <itemizedlist>
+            <listitem>
+              <para>utiliser <function>htmlentities</function>()<footnote>
+                  <para><uri>https://www.php.net/manual/fr/function.htmlentities.php</uri></para>
+                </footnote> pour le contenu de votre cookie;</para>
+            </listitem>
+
+            <listitem>
+              <para>dans votre navigateur, vous pouvez observer et supprimer
+              les cookies stockés.</para>
+            </listitem>
+          </itemizedlist>
+        </section>
+
+        <section>
+          <title>La gestion des sessions</title>
+
+          <para>Nous allons augmenter améliorer notre système.</para>
+
+          <section>
+            <title>Effectuer une direction</title>
+
+            <para>Dans authenticate.php si l'authentification échoue alors une
+            redirection est effectuée vers
+            <filename>persitent_form.php</filename> sinon ok doit-être
+            affiché. La redirection en <code>HTTP</code> est en trois étapes :
+            <footnote>
+                <para><uri>https://developer.mozilla.org/fr/docs/Web/HTTP/Redirections</uri></para>
+              </footnote></para>
+
+            <orderedlist>
+              <listitem>
+                <para>Le client demande une ressource au serveur ;</para>
+              </listitem>
+
+              <listitem>
+                <para>le serveur répond au client avec un code 30X que la
+                ressource est disponible à une autre adresse et lui fourni
+                l'adresse,</para>
+              </listitem>
+
+              <listitem>
+                <para>le client consulte la nouvelle adresse.</para>
+              </listitem>
+            </orderedlist>
+
+            <para>Les manipulations de l'entête en <acronym>PHP</acronym> se
+            font avec avec <function>header</function>()<footnote>
+                <para><uri>https://www.php.net/manual/fr/function.header.php</uri></para>
+              </footnote>, l'en-tête à modifier sera la
+            ''<code>Location:</code>'.</para>
+
+            <para>La liste des utilisateurs est définie par le tableau :
+            <screen>$users = array(
+  	"jojo" =&gt; array("password" =&gt; "pass1", "status" =&gt; "administrator"),
+  	"raoul" =&gt; array("password" =&gt; "pass2", "status" =&gt; "visitor"),
+  	"roméo" =&gt; array("password" =&gt; "pass3", "status" =&gt; "customer"),
+  		);</screen></para>
+
+            <para>La fonction <function>array_key_exists()</function> peut
+            vous aider mais n'est pas indispensable<footnote>
+                <para><uri>https://www.php.net/manual/fr/function.array-key-exists.php</uri></para>
+              </footnote>.</para>
+          </section>
+
+          <section>
+            <title>Utiliser une variable de session</title>
+
+            <para>Maintenant que nous avons pu nous authentifier, nous allons
+            créer une variable de session<footnote>
+                <para><uri>https://www.php.net/manual/fr/session.examples.basic.php</uri></para>
+              </footnote>, dans cette variable de session vous stockerez le
+            pseudo et le status puis vous effectuerez une redirection vers
+            <filename>site.php</filename>.</para>
+
+            <para>Si la variable de session n'est pas positionnée alors
+            <filename>site.php</filename> devra afficher accès refusé sinon le
+            pseudo sera affiché et en fonction du status différents affichage
+            :</para>
+
+            <variablelist>
+              <varlistentry>
+                <term>visitor</term>
+
+                <listitem>
+                  <para>consulter</para>
+                </listitem>
+              </varlistentry>
+
+              <varlistentry>
+                <term>customer</term>
+
+                <listitem>
+                  <para>consulter, acheter</para>
+                </listitem>
+              </varlistentry>
+
+              <varlistentry>
+                <term>administrator</term>
+
+                <listitem>
+                  <para>consulter, acheter, administrer</para>
+                </listitem>
+              </varlistentry>
+            </variablelist>
+
+            <figure>
+              <title>Session</title>
+
+              <mediaobject>
+                <imageobject>
+                  <imagedata fileref="data/svg/session.svg" scalefit="1"
+                             width="40%"/>
+                </imageobject>
+              </mediaobject>
+            </figure>
+          </section>
+        </section>
+      </section>
+
+      <section>
+        <title>Pour aller plus loin : Offrir des contenus différentiés</title>
+
+        <para>Il est possible pour le client <acronym>HTTP</acronym> en
+        spécifiant dans son entête un type <acronym>MIME</acronym>
+        (Multipurpose Internet Mail Extensions) de choisir pour une même
+        <acronym>URL</acronym> un contenu différent. Écrire un fichier
+        <filename>mime.php</filename> qui si le type est</para>
+
+        <variablelist>
+          <varlistentry>
+            <term>text/plain</term>
+
+            <listitem>
+              <para>renvoie <screen>pseudonyme: jojo  </screen></para>
+            </listitem>
+          </varlistentry>
+
+          <varlistentry>
+            <term>text/html</term>
+
+            <listitem>
+              <para>renvoie une page web en HTML5</para>
+            </listitem>
+          </varlistentry>
+
+          <varlistentry>
+            <term>application/json</term>
+
+            <listitem>
+              <para>renvoie <screen>{
+  "pseudonyme": "jojo"
+}</screen></para>
+            </listitem>
+          </varlistentry>
+        </variablelist>
+
+        <para>L'en-tête<code> Content-Type</code> sert à indiquer le type
+        <acronym>MIME</acronym> de la ressource sollicitée et ne peut spécifié
+        pour <methodname>GET</methodname>, vous devrez donc utiliser
+        <methodname>POST</methodname>. Les tests se feront avec
+        <command>curl</command>.</para>
+
+        <para>En PHP, header permettra de spécifier le type
+        <acronym>MIME</acronym> de la réponse et
+        <varname>$_SERVER["CONTENT_TYPE"]</varname> permet de connaître le
+        type <acronym>MIME</acronym> demandé.</para>
+      </section>
+    </section>
+
+    <section>
+      <title>L'approche MVC</title>
+
+      <para>Le patron de conception ou motif d'architecture logiciel MVC
+      (Modèle Vue Contrôleur) permet de séparé la logique métiers de
+      l'affichage, il est composé de trois parties :</para>
+
+      <variablelist>
+        <varlistentry>
+          <term>Le modèle</term>
+
+          <listitem>
+            <para>qui gère les données et la logique métiers</para>
+          </listitem>
+        </varlistentry>
+
+        <varlistentry>
+          <term>Le contrôleur</term>
+
+          <listitem>
+            <para>qui gère les demandes utilisateur en sollicitant le modèle
+            et en modifiant la vue</para>
+          </listitem>
+        </varlistentry>
+
+        <varlistentry>
+          <term>La vue</term>
+
+          <listitem>
+            <para>qui est l'interface l'utilisateur</para>
+          </listitem>
+        </varlistentry>
+      </variablelist>
+
+      <para>Nous allons réaliser une implémentation du MVC adaptée au
+      web.</para>
+
+      <figure>
+        <title>Notre MVC</title>
+
+        <mediaobject>
+          <imageobject>
+            <imagedata fileref="data/svg/mvc_choisi.svg" scalefit="1"
+                       width="80%"/>
+          </imageobject>
+        </mediaobject>
+      </figure>
+
+      <section>
+        <title>Le contrôleur frontal et l'inclusion des constantes</title>
+
+        <para>Le contrôleur frontal sera le seul fichier PHP qui pourra être
+        appelé directement, les autres seront inclus depuis celui-ci. Créer
+        l'arborescence suivante : <programlisting>-td2
+  -app
+    -config
+      -config.inc.php
+    -index.php
+  -system</programlisting></para>
+
+        <para><filename>app</filename> contiendra notre application et
+        <filename>system</filename> des utilitaires.</para>
+
+        <para>Nous allons commencer par forcer l'appel du contrôleur frontal,
+        apache permet de redéfinir localement sa configuration avec un fichier
+        <filename>.htaccess</filename>, ce fichier redéfini la configuration
+        sur le répertoire qui le contient et ceux qui sont inclus. Vous le
+        mien que vous devrez placer dans td2/app et adapter : <programlisting>RewriteEngine On
+
+FallbackResource /~berdjugin-jf/php/td2/app/index.php</programlisting><code>RewriteEngine
+        On</code> active le module de réécriture d'apache utile pour la
+        directive <code>FallbackResource</code><footnote>
+            <para><uri>https://httpd.apache.org/docs/trunk/fr/mod/mod_dir.html#fallbackresource</uri></para>
+          </footnote>, cette directive indique que si un fichier n'est pas
+        trouvé alors <filename>index.php</filename> est servi. Tester avec des
+        URL inclues dans <filename>td2</filename>. </para>
+
+        <para>Nous allons depuis <filename>index.php</filename> inclure
+        <filename>config.inc.php</filename> qui contiendra la définition de
+        nos constantes. Pour inclure un autre script vous devez utiliser une
+        des structures de contrôle suivante : <function>include</function>,
+        <code><function>include_one</function></code>, <code>require</code>,
+        <code><function>require_one</function></code><footnote>
+            <para><uri>https://www.php.net/manual/fr/function.include.php</uri></para>
+          </footnote>. Il existe également des possibilités d'auto-chargement,
+        nous les utiliserons bientôt dans cette partie<footnote>
+            <para><uri>https://www.php.net/manual/fr/language.oop5.autoload.php</uri></para>
+          </footnote>.</para>
+
+        <para>Dans config.inc.php définir avec
+        <function>define</function><footnote>
+            <para>https://www.php.net/manual/fr/function.define.php</para>
+          </footnote> la constante <constant>HOME</constant> pour qu'elle
+        contienne le chemin absolu avec le répertoire td2. Vous devrez
+        utiliser la constante magique <constant>__DIR__</constant><footnote>
+            <para><uri>https://www.php.net/manual/fr/language.constants.magic.php</uri></para>
+          </footnote>, la concaténation qui est le . en <acronym>PHP</acronym>
+        et la constante pré-définies <constant>DIRECTORY_SEPARATOR</constant>.
+        Faites afficher cette constante dans index.php. Vous devez obtenir
+        l'affichage d'un chemin absolu similaire à celui-ci <programlisting>/chemin_vers_td2/td2/app/config/../</programlisting></para>
+
+        <para>Les inclusions sont calculées à partir du premier fichier
+        chargé, <filename>index.php</filename> pour nous. Pour faciliter les
+        inclusions nous allons définir un tableau constant pour stocker les
+        répertoires et les informations sur la base de données :
+        <programlisting>const CFG = array(
+        "db" =&gt; array(
+                "host" =&gt; HOME."data".DIRECTORY_SEPARATOR,
+                "port" =&gt; null,
+                "database" =&gt; "madb.db",
+                "login" =&gt; "",
+                "password" =&gt; "",
+                "options" =&gt; array(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION),
+                "exec" =&gt; "PRAGMA foreign_keys = ON;"
+            )
+        );    </programlisting></para>
+
+        <para>Nous utiliserons SQLite un moteur <acronym>SQL</acronym> léger
+        qui peut-être exécuté en local.</para>
+
+        <para>Une fois les constantes de l'application définies, notre
+        contrôleur frontal va faire appel à un routeur.</para>
+      </section>
+
+      <section>
+        <title>Le routage</title>
+
+        <para>Nous avons vu que dans l'architecture un client effectue une
+        requête dans l'attente d'une réponse. Le routeur a pour objectif
+        d'analyser la requête pour déclencher l'exécution d'une méthode d'un
+        contrôleur avec d'éventuels paramètres.</para>
+
+        <para>Le format d'<acronym>URL</acronym> retenu est
+        <emphasis>/contrôleur/méthode/param1/param2</emphasis>. Si une méthode
+        n'est pas fournie alors la méthode index sera choisie. Par exemple
+        /<emphasis>Home</emphasis> déclenche la méthode
+        <methodname>index</methodname> du contrôleur
+        <classname>Home</classname>, <emphasis>/User/add/jojo/44</emphasis>
+        déclenche la méthode <methodname>add</methodname> du contrôleur
+        <classname>User</classname> avec les paramètres
+        <parameter>jojo</parameter> et <parameter>44</parameter>.</para>
+
+        <para>Nous allons créer un classe sans attribut ce qui peut-être
+        contestable mais qui laisse la possibilité d'évolution comme par
+        exemple de choisir les routes depuis un fichier de configuration, une
+        route étant une association entre une <acronym>URL</acronym> et
+        l'exécution d'une méthode d'un contrôleur.</para>
+
+        <para>Créer dans <filename>system</filename> une classe
+        <classname>Router</classname> dans
+        <filename>Routeur.php</filename><footnote>
+            <para><uri>https://www.php.net/manual/fr/language.oop5.php</uri></para>
+          </footnote>.<programlisting>-td2
+  -system
+    -Router.php</programlisting><programlisting>class Router
+{
+}</programlisting>Créer dans <filename>Router.php</filename> une méthode
+        <methodname>route()</methodname> qui en partant de
+        <varname>$_SERVER["SCRIPT_NAME"]</varname> et
+        <varname>$_SERVER["REQUEST_URI"]</varname> affiche le contrôleur, la
+        méthode et sous forme de tableau les paramètres. Les fonctions
+        <function>strlen</function>, <function>substr</function>,
+        <function>explode</function>, <function>array_shift</function>,
+        <function>array_pop</function> peuvent vous aider.</para>
+
+        <para>Pour que nos tests soient efficients, nous allons également
+        créer un contrôleur qui sera choisi par le routage : <programlisting>-td2
+  -app
+    -controller
+      -Home.php</programlisting><programlisting>class Home
+{
+    
+//A terme, il n'y aura pas de echo dans un contrôleur
+//Les echos seront dans les vues
+
+    function index(){
+        echo "index"
+
+    }
+    function method(){
+        echo "method";
+    }
+    function methodeWithParameter(array $params){
+        var_dump($params);
+    }
+}</programlisting> </para>
+
+        <para>Si $<varname>controller</varname> est le nom de votre
+        contrôleur; $<varname>controllerMethod</varname> celui de la méthode
+        et $<varname>params</varname> le tableau de paramètres alors le code
+        suivant permet d'instancier un contrôleur et d'appeler la
+        méthode.<programlisting>$controllerinstance = new $controller();
+$controllerinstance-&gt;$controllerMethod($params);</programlisting></para>
+
+        <para>Le routeur sera instancié dans index.php et la méthode route
+        sera invoquée : <programlisting>$router = new Router();
+$router-&gt;route();</programlisting></para>
+
+        <para>Nous allons ici utiliser le chargement automatique des classes,
+        lors de l'instanciation d'un objet, PHP chargera automatiquement la
+        classe, placer le code suivant dans votre index.php après l'inclusion
+        de config.inc.php et avant l'instanciation du routeur :
+        <programlisting>spl_autoload_register(function($class) {
+        $prefix = '..'. DIRECTORY_SEPARATOR . "system".DIRECTORY_SEPARATOR;
+
+        if (file_exists($prefix.DIRECTORY_SEPARATOR.$class . '.php')) {
+            require_once($prefix.DIRECTORY_SEPARATOR.$class . '.php');
+        }
+        $prefix = '..'. DIRECTORY_SEPARATOR . "app".DIRECTORY_SEPARATOR;
+        if (file_exists($prefix."controller".DIRECTORY_SEPARATOR.$class . '.php')) {
+            require_once($prefix."controller".DIRECTORY_SEPARATOR.$class . '.php');
+        }
+        if (file_exists($prefix."model".DIRECTORY_SEPARATOR."entity"
+            .DIRECTORY_SEPARATOR.$class . '.php')) {
+            require_once($prefix."model".DIRECTORY_SEPARATOR."entity".DIRECTORY_SEPARATOR.$class . '.php');
+        }
+        if (file_exists($prefix."model".DIRECTORY_SEPARATOR."repository"
+            .DIRECTORY_SEPARATOR.$class . '.php')) {
+            require_once($prefix."model".DIRECTORY_SEPARATOR."repository".DIRECTORY_SEPARATOR.$class . '.php');
+        }
+    });</programlisting>A ce stade, vous pouvez tester pour vérifier si les
+        méthodes de vos contrôleurs sont bien appelées.</para>
+      </section>
+
+      <section>
+        <title>Les contrôleurs</title>
+
+        <para>Nous venons de voir que nos contrôleurs sont invoqués par le
+        routeur après analyse de l'url. Les contrôleurs vont solliciter les
+        modèles pour obtenir, créer, modifier des informations avant d'appeler
+        des vues. Nous allons afficher ces étapes avant de les implémenter
+        réellement : <programlisting>class Home
+{
+    //Création d'un attribut pour accèder au modèle
+    public function __construct()
+    {
+        //instanciation de l'attribut
+    }
+
+    function index(){
+        //Solicitation du modèle
+        //Solicitation de la vue
+
+    }
+    
+}</programlisting> </para>
+      </section>
+
+      <section>
+        <title>Le modèle</title>
+
+        <para>Nous allons utiliser le patron de conception dépôt ou
+        repository, le repository est sollicité par le contrôleur, il
+        sollicite la source de donnée et renvoie des entités. Commençons par
+        créer une interface : <programlisting>-td2
+  -app
+    -model
+      -repository
+        -ProductRepositoryInterface.php
+</programlisting><programlisting>Interface ProductRepositoryInterface
+{
+    public function findAll(): array;
+}</programlisting></para>
+
+        <para>Nous allons également créer notre entité, elle ne contient que
+        des attributs privés avec des getters, des setters et un constructeur
+        sans paramètre<footnote>
+            <para>En PHP toute classe possède un constructeur par défaut qui
+            est sans paramètre. </para>
+          </footnote>: <programlisting>-td2
+  -app
+    -model
+      -entity
+        -Product.php</programlisting><programlisting>class Product
+{
+    private int $id;
+    private string $name;
+    private float $price;
+    private int $quantity;
+
+
+    /**
+     * @return int
+     */
+    public function getId(): int
+    {
+        return $this-&gt;id;
+    }
+
+    /**
+     * @return string
+     */
+    public function getName(): string
+    {
+        return $this-&gt;name;
+    }
+
+    /**
+     * @return float
+     */
+    public function getPrice(): float
+    {
+        return $this-&gt;price;
+    }
+
+    /**
+     * @return int
+     */
+    public function getQuantity(): int
+    {
+        return $this-&gt;quantity;
+    }
+
+    /**
+     * @param int $id
+     */
+    public function setId(int $id): void
+    {
+        $this-&gt;id = $id;
+    }
+
+    /**
+     * @param string $name
+     */
+    public function setName(string $name): void
+    {
+        $this-&gt;name = $name;
+    }
+
+    /**
+     * @param float $price
+     */
+    public function setPrice(float $price): void
+    {
+        $this-&gt;price = $price;
+    }
+
+    /**
+     * @param int $quantity
+     */
+    public function setQuantity(int $quantity): void
+    {
+        $this-&gt;quantity = $quantity;
+    }
+
+}</programlisting></para>
+
+        <para>A vous de créer une classe
+        <classname>MemoryProductRepository</classname> dans
+        <filename>repository</filename> qui implémente
+        <interfacename>ProductRepositoryInterface</interfacename> et qui dans
+        <methodname>findAll()</methodname> renvoie un tableau de
+        <classname>Product</classname>.</para>
+
+        <para>Modifier votre contrôleur <classname>Home</classname> pour que
+        l'attribut soit de type <type>ProductRepositoryInterface</type> et lui
+        affecter dans le constructeur une instance de
+        <classname>MemoryProductRepository</classname> enfin dans la méthode
+        <methodname>index</methodname> appeler la méthode findAll() du
+        <code>repository</code> et vérifier le résultat avec un
+        <function>var_dump()</function>. </para>
+      </section>
+
+      <section>
+        <title>La vue</title>
+
+        <para>A ce stade, notre contrôleur dispose des données du modèle et
+        souhaite les afficher, c'est la mission de la vue. Nous pourrions
+        comme pour le Router créer une classe mais dans un soucis de
+        simplification nous allons directement inclure la page web. Avec une
+        inclusion, la page aura accès à l'ensemble des variables disponibles
+        dans le contrôleur donc aux données qui viennent du modèle ce qui est
+        souhaité mais la page aura également accès au attributs du contrôleur,
+        ce qui n'est pas souhaitable. Créer une vue et y faire afficher vos
+        produits.</para>
+
+        <programlisting>-td2
+  -app
+    -view
+      -home.php
+</programlisting>
+
+        <programlisting>&lt;!doctype html&gt;
+&lt;html lang="fr"&gt;
+&lt;head&gt;
+    &lt;meta charset="utf-8"&gt;
+    &lt;title&gt;Mon magasin&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+&lt;table&gt;
+    &lt;thead&gt;
+        &lt;tr&gt;
+            &lt;th&gt; id &lt;/th&gt;
+            &lt;th&gt; name &lt;/th&gt;
+            &lt;th&gt; price &lt;/th&gt;
+            &lt;th&gt; quantity &lt;/th&gt;
+        &lt;/tr&gt;
+    &lt;/thead&gt;
+    &lt;tbody&gt;
+    &lt;?php ?&gt;
+       &lt;tr&gt;
+        &lt;td&gt; &lt;?=  ?&gt; &lt;/td&gt;
+        &lt;td&gt; &lt;?=  ?&gt; &lt;/td&gt;
+        &lt;td&gt; &lt;?=  ?&gt; &lt;/td&gt;
+        &lt;td&gt; &lt;?=  ?&gt; &lt;/td&gt;
+       &lt;/tr&gt;
+    &lt;?php ?&gt;
+    &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</programlisting>
+      </section>
+    </section>
+
+    <section>
+      <title>La persistance</title>
+
+      <para>Nous avons écrit beaucoup de code, pour au final produire un site
+      statique, en effet, il renvoie toujours les mêmes informations. Les
+      exécutions des scripts étant indépendantes, nous ne pouvons pas par
+      exemple ajouter ou supprimer des produits. Nous allons utiliser un
+      moteur base de données de pour assurer la persistance de nos données
+      entre deux exécutions puis nous rajouterons des fonctionnalités à notre
+      application. </para>
+
+      <section>
+        <title>Création et peuplement de la base</title>
+
+        <para>Nous allons utiliser SQlite pour créer la base madb.db dans data
+        : <programlisting>-td2
+  -data
+    -madb.db
+    -create_and_populate_madb.sql </programlisting> Commençons par créer un
+        script de création et de peuplement de la base de données
+        (create_and_populate_madb.sql) : <programlisting>CREATE TABLE IF NOT EXISTS product (
+        id INTEGER NOT NULL PRIMARY KEY,
+        name TEXT NOT NULL,
+        price FLOAT NOT NULL,
+        quantity INTEGER NOT NULL DEFAULT 0
+);
+
+INSERT OR REPLACE INTO product (id,name,price, quantity) VALUES (1,'p1',10.0,1);
+INSERT OR REPLACE INTO product (id,name,price, quantity) VALUES (2,'p2',20.0,1);</programlisting></para>
+
+        <para>Pour exécuter ce script, nous allons utiliser la commande
+        sqlite3<footnote>
+            <para><uri>https://www.sqlite.org/cli.html</uri></para>
+          </footnote>. </para>
+
+        <para>Pour exécuter notre script de création depuis data utiliser :
+        <command>sqlite3 madb.db '.read
+        create_and_populate_madb.sql'</command>. </para>
+
+        <para>Vous connecter sur la base (<command>sqlite3 madb.db</command>),
+        vérifier les tables (<command>.table</command>), vérifier le schéma
+        (<command>.schema</command>), afficher le contenu
+        (<command>select</command>), ajouter un nouvel enregistrement
+        (<command>insert</command>), modifier le nouvel enregistrement
+        (<command>update</command>), le supprimer ( <command>delete</command>
+        ). </para>
+      </section>
+
+      <section>
+        <title>Création d'un repository avec une source de données </title>
+
+        <para>Nous allons commencer par créer un singleton qui nous permettra
+        d'obtenir une instance de PDO et via cette instance d'obtenir une
+        connexion : <programlisting>-td2
+  -system
+    -SPDO.php</programlisting></para>
+
+        <programlisting>class SPDO
+{
+    private $connexion;
+    private static $PDOInstance;
+
+    private function __construct(string $dsn,
+                                  ?string $username = null,
+                                  ?string $password = null,
+                                  ?array $options = null,
+                                  ?string $exec = null)
+    {
+        $this-&gt;connexion = new \PDO($dsn,$username , $password, $options);
+        $this-&gt;connexion-&gt;exec($exec);
+    }
+
+    public static function getInstance(string $dsn,
+                                       ?string $username = null,
+                                       ?string $password = null,
+                                       ?array $options = null,
+                                       ?string $exec = null):SPDO
+    {
+        if(is_null(self::$PDOInstance))
+        {
+            self::$PDOInstance = new SPDO($dsn,$username , $password, $options, $exec);
+        }
+        return self::$PDOInstance;
+    }
+
+    public function getConnexion(): PDO{
+        return $this-&gt;connexion;
+    }
+}</programlisting>
+
+        <para>Cette classe possède un constructeur privé et un
+        <code>new</code> est donc exclus, l'instanciation reposera sur
+        l'utilisation de la méthode statique
+        <methodname>getInstance()</methodname> qui renvoierra une nouvelle
+        instance de <acronym>PDO</acronym> si elle n'a pas déjà été créée ou
+        le cas échéant l'instance déjà créée. L'appel d'une méthode statique
+        est réalisée via <code>::</code>, n'oubliez pas ce que vous avez
+        défini dans <filename>config.inc.php</filename>. Dans
+        <filename>index.php</filename> obtenir une connexion et la faire
+        afficher, le dsn sera au format
+        <code>sqlite:chemin/madb.db</code><footnote>
+            <para><uri>https://www.php.net/manual/fr/ref.pdo-sqlite.connection.php</uri></para>
+          </footnote>.</para>
+
+        <para>Le front contrôleur n'est pas le bon endroit pour obtenir la
+        connexion, en effet toutes les pages n'en n'auront pas besoin. Créer
+        une classe DbProductRepository qui implémente
+        ProductRepositoryInterface et qui a comme attribut une connexion
+        (déplacer le code précédemment créé). Modifier le contrôleur Home pour
+        qu'il utilise ce nouveau dépôt.</para>
+
+        <para>Enfin dans la méthode <methodname>findAll()</methodname> vous
+        allez réaliser une requête préparée <acronym>PDO</acronym> :
+        <methodname>prepare()</methodname><footnote>
+            <para><uri>https://www.php.net/manual/fr/pdo.prepare.php</uri></para>
+          </footnote>, <methodname>execute()</methodname><footnote>
+            <para><uri>https://www.php.net/manual/fr/pdostatement.execute.php</uri></para>
+          </footnote>, fetchAll()<footnote>
+            <para><uri>https://www.php.net/manual/fr/pdostatement.fetchall.php</uri></para>
+          </footnote> avec le mode <constant>PDO::FETCH_CLASS</constant> et la
+        classe <classname>Product</classname>. </para>
+
+        <para>Nous avons un site dynamique mais avec une seule fonctionnalité,
+        nous allons y remédier.</para>
+      </section>
+    </section>
+
+    <section>
+      <title>Faisons grandir l'application</title>
+
+      <para/>
+
+      <section>
+        <title>Création d'un utilisateur</title>
+
+        <para/>
+      </section>
+
+      <section>
+        <title>Passage d'une commande</title>
+
+        <para/>
+      </section>
+    </section>
+  </chapter>
+
+  <chapter>
+    <title>Mise en oeuvre d'un framework</title>
+
+    <para/>
+  </chapter>
+</book>

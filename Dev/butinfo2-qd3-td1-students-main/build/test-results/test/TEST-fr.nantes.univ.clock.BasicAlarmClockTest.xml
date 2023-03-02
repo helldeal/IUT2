@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="fr.nantes.univ.clock.BasicAlarmClockTest" tests="5" skipped="0" failures="0" errors="0" timestamp="2023-02-17T08:09:12" hostname="U-INF-J-E113-21" time="0.171">
+  <properties/>
+  <testcase name="selectRing()" classname="fr.nantes.univ.clock.BasicAlarmClockTest" time="0.031"/>
+  <testcase name="checkTimeAndRing()" classname="fr.nantes.univ.clock.BasicAlarmClockTest" time="0.001"/>
+  <testcase name="addMin()" classname="fr.nantes.univ.clock.BasicAlarmClockTest" time="0.002"/>
+  <testcase name="construct()" classname="fr.nantes.univ.clock.BasicAlarmClockTest" time="0.132"/>
+  <testcase name="switchOff()" classname="fr.nantes.univ.clock.BasicAlarmClockTest" time="0.001"/>
+  <system-out><![CDATA[A Calendar is instantiated
+Calendar consulted
+Calendar consulted
+Calendar consulted
+Calendar consulted
+A Calendar is instantiated
+Calendar consulted
+Calendar consulted
+Calendar consulted
+Calendar consulted
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
